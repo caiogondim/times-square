@@ -39,7 +39,7 @@
         "scope": "punctuation.definition.bracket.curly.begin.jsdoc, punctuation.definition.bracket.curly.end.jsdoc, punctuation.definition.optional-value.begin.bracket.square.jsdoc, punctuation.definition.optional-value.end.bracket.square.jsdoc",
         "foreground": "var(comment)"
     }, {
-        "scope": "keyword, storage",
+        "scope": "keyword, storage, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css",
         "foreground": "var(blue)"
     }, {
         "scope": "entity, support, punctuation.definition.heading.begin.markdown",

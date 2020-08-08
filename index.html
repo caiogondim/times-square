@@ -42,7 +42,6 @@
 
     const context = canvas.getContext('2d')
     const hsluvContext = $canvasHsluv.getContext('2d')
-    var scale = window.devicePixelRatio
 
     function mapCoordToLightness(x, y) {
       const maxWidth = canvas.width
@@ -66,7 +65,7 @@
         hsluvContext.fillStyle = hsluv.hsluvToHex([hue, saturation, lightness])
         hsluvContext.fillRect(x, y, 1, 1)
 
-        if (y === 440 && (x + 90) % 100 === 0) {
+        if (y === 440 && x % 50 === 0) {
           console.log('x', x)
           console.log(hsluv.hsluvToHex([hue, saturation, lightness]))
           accentColors.push(hsluv.hsluvToHex([hue, saturation, lightness]))

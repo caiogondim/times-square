@@ -4,6 +4,7 @@
         "background": "rgb(45, 45, 45)",
         "foreground": "rgb(181, 181, 181)",
         "red": "rgb(239, 158, 167)",
+        "red": "hsl(348, 100%, 80%)",
         "yellow": "rgb(205, 166, 85)",
         "green": "rgb(116, 189, 84)",
         "cyan": "rgb(90, 187, 176)",

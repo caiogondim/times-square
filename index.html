@@ -33,12 +33,12 @@
     const accentColors = []
 
     const canvas = document.documentElement.querySelector('#rgb-canvas')
-    canvas.width = 600
-    canvas.height = 600
+    canvas.width = 1200
+    canvas.height = 1200
 
     const $canvasHsluv = document.documentElement.querySelector('#hsluv-canvas')
-    $canvasHsluv.width = 600
-    $canvasHsluv.height = 600
+    $canvasHsluv.width = 1200
+    $canvasHsluv.height = 1200
 
     const context = canvas.getContext('2d')
     const hsluvContext = $canvasHsluv.getContext('2d')
@@ -54,7 +54,7 @@
     }
 
     let hue
-    const saturation = 75
+    const saturation = 100
     let lightness
     for (let x = 0; x < canvas.width; x++) {
       for (let y = 0; y < canvas.height; y++) {
@@ -65,9 +65,7 @@
         hsluvContext.fillStyle = hsluv.hsluvToHex([hue, saturation, lightness])
         hsluvContext.fillRect(x, y, 1, 1)
 
-        if (y === 440 && x % 100 === 0) {
-          console.log('x', x)
-          console.log(hsluv.hsluvToHex([hue, saturation, lightness]))
+        if (y === 880 && x % 200 === 0) {
           accentColors.push(hsluv.hsluvToHex([hue, saturation, lightness]))
 
           hsluvContext.fillStyle = `rgb(0, 0, 0)`

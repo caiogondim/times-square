@@ -21,28 +21,29 @@
         "gutter_foreground": "var(comment)"
     },
     "rules": [{
-        "scope": "constant, keyword.other.unit.css, markup.italic.markdown",
-        "foreground": "var(yellow)"
-    }, {
-        "scope": "comment",
+        "scope": "comment, punctuation.definition.block, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, meta.brace.round, punctuation.terminator.statement, punctuation.definition.bracket.curly.begin.jsdoc, punctuation.definition.bracket.curly.end.jsdoc, punctuation.definition.optional-value.begin.bracket.square.jsdoc, punctuation.definition.optional-value.end.bracket.square.jsdoc, punctuation.definition.binding-pattern.object",
         "foreground": "var(comment)"
     }, {
-        "scope": "string",
+        "scope": "constant, keyword.other.unit.css, markup.italic.markdown",
         "foreground": "var(green)"
     }, {
-        "scope": "source",
+        "scope": "keyword, variable.language",
+        "foreground": "var(red)"
+    }, {
+        "scope": "string",
+        "foreground": "var(cyan)"
+    }, {
+        "scope": "source, keyword.operator, meta.method.declaration",
         "foreground": "var(foreground)"
     }, {
+        "name": "magenta between",
         "scope": "variable",
         "foreground": ["hsl(247, 64%, 80%)", "hsl(323, 71%, 77%)"]
     }, {
-        "scope": "punctuation.definition.bracket.curly.begin.jsdoc, punctuation.definition.bracket.curly.end.jsdoc, punctuation.definition.optional-value.begin.bracket.square.jsdoc, punctuation.definition.optional-value.end.bracket.square.jsdoc",
-        "foreground": "var(comment)"
-    }, {
-        "scope": "keyword, storage, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css",
+        "scope": "storage, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css",
         "foreground": "var(blue)"
     }, {
         "scope": "entity, support, punctuation.definition.heading.begin.markdown",
-        "foreground": "var(red)"
+        "foreground": "var(yellow)"
     }]
 }

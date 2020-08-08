@@ -27,13 +27,13 @@
         "scope": "constant, keyword.other.unit.css",
         "foreground": "var(green)"
     }, {
-        "scope": "keyword, variable.language, storage.modifier, storage.type.property",
+        "scope": "keyword, variable.language, storage.modifier, storage.type.property, storage.type.function.arrow",
         "foreground": "var(red)"
     }, {
         "scope": "string",
         "foreground": "var(cyan)"
     }, {
-        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable",
+        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator.new",
         "foreground": "var(foreground)"
     }, {
         "name": "between magenta and blue",

@@ -33,7 +33,7 @@
         "scope": "string",
         "foreground": "var(cyan)"
     }, {
-        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end",
+        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable",
         "foreground": "var(foreground)"
     }, {
         "name": "magenta between",

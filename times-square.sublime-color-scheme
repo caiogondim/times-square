@@ -3,12 +3,12 @@
     "variables": {
         "background": "rgb(45, 45, 45)",
         "foreground": "rgb(181, 181, 181)",
-        "red": "rgb(242, 177, 184)",
-        "yellow": "rgb(224, 191, 97)",
-        "green": "rgb(106, 217, 96)",
-        "cyan": "rgb(103, 211, 205)",
-        "blue": "rgb(164, 196, 240)",
-        "magenta": "rgb(237, 172, 240)",
+        "red": "hsl(353, 72%, 78%)",
+        "yellow": "hsl(44, 56%, 58%)",
+        "green": "hsl(115, 52%, 57%)",
+        "cyan": "hsl(176, 46%, 57%)",
+        "blue": "hsl(213, 73%, 74%)",
+        "magenta": "hsl(298, 70%, 76%)",
         "selection": "rgb(89, 89, 89)",
         "comment": "rgb(100, 100, 100)"
     },
@@ -21,11 +21,8 @@
         "gutter_foreground": "var(comment)"
     },
     "rules": [{
-        "scope": "constant",
+        "scope": "constant, keyword.other.unit.css, markup.italic.markdown",
         "foreground": "var(yellow)"
-    }, {
-        "scope": "entity",
-        "foreground": "var(blue)"
     }, {
         "scope": "comment",
         "foreground": "var(comment)"
@@ -37,18 +34,15 @@
         "foreground": "var(foreground)"
     }, {
         "scope": "variable",
-        "foreground": "var(magenta)"
+        "foreground": ["hsl(268, 70%, 76%)", "hsl(328, 70%, 76%)"]
     }, {
         "scope": "punctuation.definition.bracket.curly.begin.jsdoc, punctuation.definition.bracket.curly.end.jsdoc, punctuation.definition.optional-value.begin.bracket.square.jsdoc, punctuation.definition.optional-value.end.bracket.square.jsdoc",
         "foreground": "var(comment)"
     }, {
-        "scope": "keyword",
-        "foreground": "var(red)"
-    }, {
-        "scope": "support",
+        "scope": "keyword, storage",
         "foreground": "var(blue)"
     }, {
-        "scope": "storage",
+        "scope": "entity, support, punctuation.definition.heading.begin.markdown",
         "foreground": "var(red)"
     }]
 }

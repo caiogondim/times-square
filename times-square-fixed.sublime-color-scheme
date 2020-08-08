@@ -42,13 +42,13 @@
         "scope": "variable",
         "foreground": "var(blue)"
     }, {
-        "scope": " entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.constant, support.variable.object.process, support.variable.property.process, variable.language.this, variable.language.super, keyword.operator.assignment, meta.brace, punctuation.accessor, punctuation.definition.template-expression, variable.other.property",
+        "scope": " entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.constant, support.variable.object.process, support.variable.property.process, variable.language.this, variable.language.super, keyword.operator.assignment, meta.brace, punctuation.accessor, punctuation.definition.template-expression, variable.other.property, punctuation.definition.block",
         "foreground": "var(foreground)"
     }, {
         "scope": "entity, support, entity.other.attribute-name, markup.italic.markdown, support.class.component, support.class.component",
         "foreground": "var(yellow)"
     }, {
-        "scope": "storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key",
+        "scope": "storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag",
         "foreground": "var(magenta)"
     }]
 }

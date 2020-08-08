@@ -54,7 +54,7 @@
     }
 
     let hue
-    const saturation = 100
+    const saturation = 75
     let lightness
     for (let x = 0; x < canvas.width; x++) {
       for (let y = 0; y < canvas.height; y++) {
@@ -65,7 +65,7 @@
         hsluvContext.fillStyle = hsluv.hsluvToHex([hue, saturation, lightness])
         hsluvContext.fillRect(x, y, 1, 1)
 
-        if (y === 880 && x % 200 === 0) {
+        if (y === 880 && x % 100 === 0) {
           accentColors.push(hsluv.hsluvToHex([hue, saturation, lightness]))
 
           hsluvContext.fillStyle = `rgb(0, 0, 0)`

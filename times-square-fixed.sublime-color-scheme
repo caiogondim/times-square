@@ -1,5 +1,5 @@
 {
-    "name": "Times Square",
+    "name": "Times Square (fixed syntax highlight)",
     "variables": {
         "background": "rgb(45, 45, 45)",
         "foreground": "rgb(181, 181, 181)",
@@ -36,7 +36,7 @@
         "scope": "string",
         "foreground": "var(cyan)"
     }, {
-        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator.expression.typeof, support.class, keyword.operator, punctuation.separator.key-value",
+        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator.expression.typeof, support.class, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
         "foreground": "var(foreground)"
     }, {
         "scope": "variable",
@@ -48,7 +48,7 @@
         "scope": "entity, support, entity.other.attribute-name, markup.italic.markdown, support.class.component, support.class.component",
         "foreground": "var(yellow)"
     }, {
-        "scope": "storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag",
+        "scope": "storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag, punctuation.definition.template-expression",
         "foreground": "var(magenta)"
     }]
 }

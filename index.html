@@ -4,16 +4,40 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
+    html, body {
+      background-color: #454545;
+      font-size: 18px;
+    }
+
     #rgb-canvas {
-      width: 500px;
-      height: 500px;
+      width: 600px;
+      height: 600px;
+    }
+
+    #hsluv-canvas {
+      width: 600px;
+      height: 600px;
     }
   </style>
 </head>
+<body>
+  <!-- red, green, yellow, blue, magenta, cyan -->
   <canvas id="rgb-canvas"></canvas>
+  <canvas id="hsluv-canvas"></canvas>
+  <script src="https://rawcdn.githack.com/hsluv/hsluv/891edd6a46d6e5bd8d29749c209c76887e062a6e/javascript/dist/hsluv-0.1.0.min.js"></script>
   <script>
+    const accentColors = []
+
     const canvas = document.documentElement.querySelector('#rgb-canvas')
+    canvas.width = 600
+    canvas.height = 600
+
+    const $canvasHsluv = document.documentElement.querySelector('#hsluv-canvas')
+    $canvasHsluv.width = 600
+    $canvasHsluv.height = 600
+
     const context = canvas.getContext('2d')
+    const hsluvContext = $canvasHsluv.getContext('2d')
     var scale = window.devicePixelRatio
 
     function mapCoordToLightness(x, y) {
@@ -30,12 +54,37 @@
     const saturation = 75
     let lightness
     for (let x = 0; x < canvas.width; x++) {
-      for (let y = 0; y < canvas.width; y++) {
+      for (let y = 0; y < canvas.height; y++) {
+
         lightness = mapCoordToLightness(x, y)
         hue = mapCoordToHue(x, y)
+
+        hsluvContext.fillStyle = hsluv.hsluvToHex([hue, saturation, lightness])
+        hsluvContext.fillRect(x, y, 1, 1)
+
+        if (y === 440 && (x + 90) % 100 === 0) {
+          console.log('x', x)
+          console.log(hsluv.hsluvToHex([hue, saturation, lightness]))
+          accentColors.push(hsluv.hsluvToHex([hue, saturation, lightness]))
+
+          hsluvContext.fillStyle = `rgb(0, 0, 0)`
+          hsluvContext.fillRect(x, y, 1, 1)
+        }
+
         context.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`
         context.fillRect(x, y, 1, 1)
       }
+    }
+
+    for (let color of [...accentColors, `#777677`, `rgb(181, 181, 181)`]) {
+      const $div = document.createElement('span')
+      $div.style = `
+        width: 30px;
+        height: 30px;
+        color: ${color};
+      `
+      $div.innerText = 'Lorem'
+      document.documentElement.querySelector('body').append($div)
     }
 
   </script>

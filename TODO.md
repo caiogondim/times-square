@@ -1,0 +1,7 @@
+- test contrast ratio
+  - https://docs.rs/contrast/0.1.0/contrast/fn.contrast.html
+  - all colors must have same contrast ratio
+  - all colors must have at least constrat ratio of 4
+- generate application specific color scheme via a temaplate engine
+  - https://docs.rs/tinytemplate/1.1.0/tinytemplate/
+- test against color blindness

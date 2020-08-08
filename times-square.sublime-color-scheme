@@ -1,0 +1,54 @@
+{
+    "name": "Times Square",
+    "variables": {
+        "background": "rgb(45, 45, 45)",
+        "foreground": "rgb(181, 181, 181)",
+        "red": "rgb(242, 177, 184)",
+        "yellow": "rgb(224, 191, 97)",
+        "green": "rgb(106, 217, 96)",
+        "cyan": "rgb(103, 211, 205)",
+        "blue": "rgb(164, 196, 240)",
+        "magenta": "rgb(237, 172, 240)",
+        "selection": "rgb(89, 89, 89)",
+        "comment": "rgb(100, 100, 100)"
+    },
+    "globals": {
+        "background": "var(background)",
+        "foreground": "var(foreground)",
+        "caret": "white",
+        "selection": "var(selection)",
+        "line_highlight": "rgb(50, 50, 50)",
+        "gutter_foreground": "var(comment)"
+    },
+    "rules": [{
+        "scope": "constant",
+        "foreground": "var(yellow)"
+    }, {
+        "scope": "entity",
+        "foreground": "var(blue)"
+    }, {
+        "scope": "comment",
+        "foreground": "var(comment)"
+    }, {
+        "scope": "string",
+        "foreground": "var(green)"
+    }, {
+        "scope": "source",
+        "foreground": "var(foreground)"
+    }, {
+        "scope": "variable",
+        "foreground": "var(magenta)"
+    }, {
+        "scope": "punctuation.definition.bracket.curly.begin.jsdoc, punctuation.definition.bracket.curly.end.jsdoc, punctuation.definition.optional-value.begin.bracket.square.jsdoc, punctuation.definition.optional-value.end.bracket.square.jsdoc",
+        "foreground": "var(comment)"
+    }, {
+        "scope": "keyword",
+        "foreground": "var(red)"
+    }, {
+        "scope": "support",
+        "foreground": "var(blue)"
+    }, {
+        "scope": "storage",
+        "foreground": "var(red)"
+    }]
+}

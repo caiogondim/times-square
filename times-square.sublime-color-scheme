@@ -24,7 +24,7 @@
         "scope": "comment, punctuation.definition.bracket.curly.begin.jsdoc, punctuation.definition.bracket.curly.end.jsdoc",
         "foreground": "var(comment)"
     }, {
-        "scope": "constant, keyword.other.unit.css, markup.italic.markdown",
+        "scope": "constant, keyword.other.unit.css",
         "foreground": "var(green)"
     }, {
         "scope": "keyword, variable.language, storage.modifier, storage.type.property",
@@ -36,14 +36,17 @@
         "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable",
         "foreground": "var(foreground)"
     }, {
-        "name": "magenta between",
+        "name": "between magenta and blue",
         "scope": "variable",
         "foreground": ["hsl(208, 76%, 71%)", "hsl(290, 69%, 77%)"]
     }, {
-        "scope": "storage, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.block.tag, entity.other.attribute-name, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, variable.other.object, support.constant, support.variable.object.process, support.variable.property.process, variable.language.this, variable.language.super, keyword.operator.assignment",
+        "scope": "storage, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.block.tag, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, variable.other.object, support.constant, support.variable.object.process, support.variable.property.process, variable.language.this, variable.language.super, keyword.operator.assignment",
         "foreground": "var(foreground)"
     }, {
-        "scope": "entity, support, punctuation.definition.heading.begin.markdown",
+        "scope": "entity, support, entity.other.attribute-name, markup.italic.markdown",
         "foreground": "var(yellow)"
+    }, {
+        "scope": "punctuation.definition.heading.begin.markdown, entity.name.section.markdown",
+        "foreground": "var(blue)"
     }]
 }

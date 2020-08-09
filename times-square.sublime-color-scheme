@@ -1,5 +1,5 @@
 {
-    "name": "Times Square (hashed syntax highlight)",
+    "name": "Times Square (fixed syntax highlight)",
     "variables": {
         "background": "rgb(45, 45, 45)",
         "foreground": "rgb(181, 181, 181)",
@@ -30,26 +30,26 @@
         "scope": "constant, keyword.other.unit.css",
         "foreground": "var(green)"
     }, {
-        "scope": "keyword, variable.language, storage.modifier, storage.type.property, storage.type.function.arrow, keyword.operator.new, keyword.operator.expression.delete",
+        "scope": "storage.type, storage.type.class, storage.type.function, support.type.object.module, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete, variable.language.this",
         "foreground": "var(red)"
     }, {
         "scope": "string",
-        "foreground": "var(cyan)"
+        "foreground": "var(yellow)"
     }, {
-        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator.expression.typeof, support.class, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
+        "scope": "source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, support.class, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
         "foreground": "var(foreground)"
     }, {
         "name": "between blue",
-        "scope": "variable",
+        "scope": "variable, entity.name.function, support.function.dom",
         "foreground": ["hsl(189, 56%, 60%)", "hsl(247, 64%, 80%)"]
     }, {
-        "scope": " entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.constant, support.variable.object.process, support.variable.property.process, variable.language.this, variable.language.super, keyword.operator.assignment, meta.brace, punctuation.accessor, punctuation.definition.template-expression, variable.other.property, punctuation.definition.block, punctuation.separator.comma",
+        "scope": "keyword.operator.spread, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.variable.object.process, support.variable.property.process, variable.language.super, meta.brace, punctuation.accessor, punctuation.definition.template-expression, punctuation.definition.block",
         "foreground": "var(foreground)"
     }, {
-        "scope": "entity, support, entity.other.attribute-name, markup.italic.markdown, support.class.component, support.class.component",
-        "foreground": "var(yellow)"
+        "scope": "entity, support, entity.other.attribute-name, markup.italic.markdown, support.class.component, support.class.component, meta.decorator",
+        "foreground": "var(cyan)"
     }, {
-        "scope": "storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag, punctuation.definition.template-expression",
+        "scope": "keyword.operator, storage.type.class.jsdoc, storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag, punctuation.definition.template-expression",
         "foreground": "var(magenta)"
     }]
 }

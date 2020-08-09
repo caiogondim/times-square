@@ -1,3 +1,5 @@
+- fix obj1.obj2.obj3.obj4
+  - highlight obj1 and obj4 only
 - test contrast ratio
   - https://docs.rs/contrast/0.1.0/contrast/fn.contrast.html
   - all colors must have same contrast ratio

@@ -31,20 +31,23 @@
         "scope": "constant, keyword.other.unit.css",
         "foreground": "var(green)"
     }, {
-        "scope": "support.function, support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.type.object.module, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete, variable.language.this",
-        "foreground": "var(red)"
+        "scope": "support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.type.object.module, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete",
+        "foreground": "var(foreground)"
     }, {
         "scope": "string",
         "foreground": "var(yellow)"
     }, {
-        "scope": "entity.name.type, entity, source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
+        "scope": "entity.name.type, entity, source, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
         "foreground": "var(foreground)"
+    }, {
+        "scope": "support.class.builtin, variable.other.object.property, variable.other.property.tsx, punctuation.definition.template-expression, punctuation.terminator.statement, punctuation.decorator, keyword.operator, storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag, storage.type.class.jsdoc, keyword.operator.spread, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.variable.object.process, meta.brace, punctuation.accessor, punctuation.definition.block",
+        "foreground": "var(foreground)"
+    }, {
+        "scope": "keyword.generator.asterisk, storage.modifier.async, keyword.control, keyword.control, support.variable.object.process, variable.language.super",
+        "foreground": "var(red)"
     }, {
         "name": "between blue",
-        "scope": "variable, entity.name.function, entity.name.type, support.function.dom",
+        "scope": "support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function",
         "foreground": ["var(cyan)", "var(magenta)"]
-    }, {
-        "scope": "punctuation.decorator, keyword.operator, storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag, punctuation.definition.template-expression, storage.type.class.jsdoc, keyword.operator.spread, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.variable.object.process, support.variable.property.process, variable.language.super, meta.brace, punctuation.accessor, punctuation.definition.template-expression, punctuation.definition.block",
-        "foreground": "var(foreground)"
     }]
 }

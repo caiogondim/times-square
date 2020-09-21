@@ -39,7 +39,7 @@
         "scope": "keyword.operator.spread, source, meta.method.declaration, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, support.class, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
         "foreground": "var(foreground)"
     }, {
-        "scope": "variable, entity.name.function, support.function.dom",
+        "scope": "support.class.error, variable, entity.name.function, support.function.dom",
         "foreground": "var(blue)"
     }, {
         "scope": " entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.variable.object.process, support.variable.property.process, variable.language.super, meta.brace, punctuation.accessor, punctuation.definition.template-expression, punctuation.definition.block",

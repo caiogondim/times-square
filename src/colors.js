@@ -1,5 +1,10 @@
 const Color = require('color')
 
+function colorToRgb(color) {
+	const [red, green, blue] = color.rgb().array()	
+	return `rgb(${Math.round(red)}, ${Math.round(green)}, ${Math.round(blue)})`
+}
+
 const dark = {
 	rgb: {
 		"background": "rgb(56, 56, 56)",
@@ -14,6 +19,7 @@ const dark = {
 		"comment": "rgb(102, 102, 102)"
 	}
 }
+dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.2))
 dark.hex = {
 	background: Color(dark.rgb.background).hex(),
 	foreground: Color(dark.rgb.foreground).hex(),

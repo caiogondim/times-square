@@ -270,13 +270,13 @@ const template = `
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${dark.srgb.foreground.blue}</real>
+		<real>${dark.srgb.selection.blue}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${dark.srgb.foreground.green}</real>
+		<real>${dark.srgb.selection.green}</real>
 		<key>Red Component</key>
-		<real>${dark.srgb.foreground.red}</real>
+		<real>${dark.srgb.selection.red}</real>
 	</dict>
 	<key>Cursor Text Color</key>
 	<dict>

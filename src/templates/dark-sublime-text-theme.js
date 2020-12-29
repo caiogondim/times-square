@@ -61,6 +61,11 @@ const sidebar = [{
     "layer0.tint": dark.rgb.gray4
 }]
 
+const views = [{
+    'class': 'grid_layout_control',
+    'border_color': dark.rgb.gray4
+}]
+
 const quickPanel = [{
 	'class': 'overlay_control',
 	'layer0.texture': '',
@@ -81,7 +86,7 @@ const quickPanel = [{
 
 const template = {
     "rules":
-    [...sidebar,...windows,...tabs, ...statusBar, ...quickPanel]
+    [...sidebar,...windows,...tabs, ...statusBar, ...views, ...quickPanel]
 }
 
 module.exports = JSON.stringify(template, null, 2)

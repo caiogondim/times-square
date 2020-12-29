@@ -77,6 +77,10 @@
       "color": "rgb(117, 117, 117)"
     },
     {
+      "class": "grid_layout_control",
+      "border_color": "rgb(32, 32, 32)"
+    },
+    {
       "class": "overlay_control",
       "layer0.texture": "",
       "layer0.opacity": 1,

@@ -5,7 +5,7 @@
   <title>Document</title>
   <style>
     html, body {
-      background-color: #454545;
+      background-color: rgb(56, 56, 56);
       font-size: 18px;
     }
 
@@ -30,7 +30,19 @@
   <canvas id="hsluv-canvas"></canvas>
   <script src="https://rawcdn.githack.com/hsluv/hsluv/891edd6a46d6e5bd8d29749c209c76887e062a6e/javascript/dist/hsluv-0.1.0.min.js"></script>
   <script>
+    // Backfround color: rgb(56, 56, 56)
+    // Bare minimal to pass contrast rule
+    // Saturation and lightness defined subjectively 
+    // Comment has contrast ratio of 2.0
+    // All others should have as close as possible to 4.5
+
+    // Recipe
+    // 1. Set height on heightOfSampling
+    // 2. Get equidistant colors from the same height using HSLUV algorithm
+
     const accentColors = []
+    // Try a smaller saturation ~70%
+    const heightOfSampling = 1200 * 0.7
 
     const canvas = document.documentElement.querySelector('#rgb-canvas')
     canvas.width = 1200
@@ -53,19 +65,22 @@
       return (x / maxWidth) * 360
     }
 
+    let saturation
     let hue
-    const saturation = 75
-    let lightness
+    // let lightness = 66.1
+    let lightness = 81.5
     for (let x = 0; x < canvas.width; x++) {
       for (let y = 0; y < canvas.height; y++) {
 
-        lightness = mapCoordToLightness(x, y)
+        // lightness = mapCoordToLightness(x, y)
+        saturation = mapCoordToLightness(x, y)
         hue = mapCoordToHue(x, y)
 
         hsluvContext.fillStyle = hsluv.hsluvToHex([hue, saturation, lightness])
         hsluvContext.fillRect(x, y, 1, 1)
 
-        if (y === 880 && x % 100 === 0) {
+        // Get 12 equidistant colors
+        if (y === heightOfSampling && x % 200 === 0) {
           accentColors.push(hsluv.hsluvToHex([hue, saturation, lightness]))
 
           hsluvContext.fillStyle = `rgb(0, 0, 0)`
@@ -77,7 +92,8 @@
       }
     }
 
-    for (let color of [...accentColors, `#777677`, `rgb(181, 181, 181)`]) {
+    // for (let color of [...accentColors, `#666666`, `#a1a1a1`]) {
+    for (let color of [...accentColors, `#666666`, `#c9c9c9`]) {
       const $div = document.createElement('span')
       $div.style = `
         width: 30px;

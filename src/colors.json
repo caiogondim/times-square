@@ -1,0 +1,13 @@
+{
+  "background": "rgb(56, 56, 56)",
+  "foreground": "rgb(161, 161, 161)",
+  "red": "rgb(255, 124, 155)",
+  "orange": "rgb(255, 132, 40)",
+  "yellow": "rgb(207, 159, 1)",
+  "green": "rgb(90, 188, 1)",
+  "cyan": "rgb(1, 186, 172)",
+  "blue": "rgb(1, 176, 252)",
+  "magenta": "rgb(235, 118, 255)",
+  "selection": "rgb(89, 89, 89)",
+  "comment": "rgb(161, 161, 161)"
+}

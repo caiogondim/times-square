@@ -1,24 +1,23 @@
 {
     "name": "Times Square",
     "variables": {
-        "background": "rgb(45, 45, 45)",
-        "foreground": "rgb(181, 181, 181)",
-        "red": "hsl(348, 72%, 78%)",
-        "orange": "hsl(18, 79%, 72%)",
-        "yellow": "rgb(205, 166, 85)",
-        "green": "rgb(116, 189, 84)",
-        "cyan": "rgb(90, 187, 176)",
-        "blue": "rgb(104, 178, 235)",
-        "magenta": "rgb(220, 143, 235)",
-        "selection": "rgb(89, 89, 89)",
-        "comment": "rgb(100, 100, 100)"
+        "background": "rgb(56, 56, 56)",
+        "foreground": "rgb(201, 201, 201)",
+        "red": "rgb(241, 189, 199)",
+        "yellow": "rgb(240, 197, 111)",
+        "green": "rgb(143, 222, 110)",
+        "cyan": "rgb(117, 220, 208)",
+        "blue": "rgb(173, 206, 240)",
+        "magenta": "rgb(231, 189, 240)",
+        "selection": "rgb(68, 68, 68)",
+        "comment": "rgb(102, 102, 102)"
     },
     "globals": {
         "background": "var(background)",
         "foreground": "var(foreground)",
         "caret": "white",
-        "selection": "color(var(comment) lightness(30%))",
-        "line_highlight": "rgb(50, 50, 50)",
+        "selection": "var(selection)",
+        "line_highlight": "var(selection)",
         "gutter_foreground": "var(comment)",
         "fold_marker": "var(magenta)",
         "misspelling": "var(red)",
@@ -31,7 +30,7 @@
         "foreground": "var(comment)"
     }, {
         "scope": "constant, keyword.other.unit.css",
-        "foreground": "var(green)"
+        "foreground": "var(yellow)"
     }, {
         "scope": "support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete",
         "foreground": "var(foreground)"
@@ -39,7 +38,7 @@
         "scope": "string",
         "foreground": "var(yellow)"
     }, {
-        "scope": "punctuation.section.brackets.begin, punctuation.section.brackets.end, punctuation.section.block.begin, punctuation.section.block.end, punctuation.section.group.begin, punctuation.section.group.end, entity, source, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
+        "scope": "punctuation.section.interpolation.begin.js, punctuation.section.interpolation.end.js, punctuation.section.brackets.begin, punctuation.section.brackets.end, punctuation.section.block.begin, punctuation.section.block.end, punctuation.section.group.js, punctuation.section.group.begin, punctuation.section.group.end, entity, source, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma",
         "foreground": "var(foreground)"
     }, {
         "scope": "punctuation.definition.binding-pattern.object.tsx, keyword.control.default, keyword.control.from, support.type.object.console, support.type.object.dom, constant.character.escape, variable.language.this, support.class.builtin, variable.other.object.property, punctuation.definition.template-expression, punctuation.terminator.statement, punctuation.decorator, keyword.operator, storage, punctuation.definition.heading.begin.markdown, entity.name.section.markdown, meta.object-literal.key, punctuation.definition.block.tag, storage.type.class.jsdoc, keyword.operator.spread, entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, punctuation.definition.parameters.begin, punctuation.definition.parameters.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, support.variable.object.process, meta.brace, punctuation.accessor, punctuation.definition.block",
@@ -53,6 +52,6 @@
     },{
         "name": "between blue",
         "scope": "support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function",
-        "foreground": ["var(cyan)", "var(magenta)"]
+        "foreground": ["var(green)", "var(magenta)"]
     }]
 }

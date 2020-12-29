@@ -1,5 +1,4 @@
 const path = require('path')
-const { promisify } = require('util')
 const { Readable } = require('stream')
 const { pipeline } = require('stream/promises')
 const { createWriteStream } = require('fs')
@@ -9,16 +8,24 @@ const iterm = require('../templates/iterm')
 const darkSublimeTextTheme = require('../templates/dark-sublime-text-theme')
 
 async function main() {
-	const inputOutputMap = [
-		{ input: darkVariableSublimeTextColorScheme, output: 'times-square-dark-variable.sublime-color-scheme'},
-		{ input: darkFixedSublimeTextColorScheme, output: 'times-square-dark-fixed.sublime-color-scheme'},
-		{ input: iterm, output: 'times-square.itermcolors'},
-		{ input: darkSublimeTextTheme, output: 'Adaptive.sublime-theme'},
-	]
-	for (const { input, output } of inputOutputMap) {
-		const writeStream = createWriteStream(path.resolve(__dirname, '..', '..', 'build', output))
-		await pipeline(Readable.from(input), writeStream)
-	}
+  const inputOutputMap = [
+    {
+      input: darkVariableSublimeTextColorScheme,
+      output: 'times-square-dark-variable.sublime-color-scheme',
+    },
+    {
+      input: darkFixedSublimeTextColorScheme,
+      output: 'times-square-dark-fixed.sublime-color-scheme',
+    },
+    { input: iterm, output: 'times-square.itermcolors' },
+    { input: darkSublimeTextTheme, output: 'Adaptive.sublime-theme' },
+  ]
+  for (const { input, output } of inputOutputMap) {
+    const writeStream = createWriteStream(
+      path.resolve(__dirname, '..', '..', 'build', output)
+    )
+    await pipeline(Readable.from(input), writeStream)
+  }
 }
 
 main()

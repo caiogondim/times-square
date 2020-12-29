@@ -30,6 +30,11 @@ const dark = {
 }
 dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.5))
 dark.rgb.black = colorToRgb(Color(dark.rgb.background).darken(0.5))
+dark.rgb.gray1 = colorToRgb(Color(dark.rgb.background).lighten(0.5))
+dark.rgb.gray2 = colorToRgb(Color(dark.rgb.background).lighten(0.25))
+dark.rgb.gray3 = colorToRgb(Color(dark.rgb.background))
+dark.rgb.gray4 = colorToRgb(Color(dark.rgb.background).darken(0.25))
+dark.rgb.gray5 = colorToRgb(Color(dark.rgb.background).darken(0.5))
 
 dark.hex = {
 	background: Color(dark.rgb.background).hex(),

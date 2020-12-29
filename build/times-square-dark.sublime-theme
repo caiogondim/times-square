@@ -1,0 +1,11 @@
+{
+  "variables": {
+    "light_gray": "rgb(240, 240, 240)"
+  },
+  "rules": [
+    {
+      "class": "label_control",
+      "fg": "var(light_gray)"
+    }
+  ]
+}

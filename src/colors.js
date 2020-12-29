@@ -7,15 +7,15 @@ function colorToRgb(color) {
 
 const dark = {
 	rgb: {
-		"background": "rgb(56, 56, 56)",
-		"foreground": "rgb(201, 201, 201)",
-		"red": "rgb(241, 189, 199)",
-		"yellow": "rgb(240, 197, 111)",
-		"green": "rgb(143, 222, 110)",
-		"cyan": "rgb(117, 220, 208)",
-		"blue": "rgb(173, 206, 240)",
-		"magenta": "rgb(231, 189, 240)",
-		"comment": "rgb(102, 102, 102)"
+		"background": "rgb(43, 43, 43)",
+		"foreground": "rgb(184, 184, 184)",
+		"red": "rgb(236, 164, 178)",
+		"yellow": "rgb(217, 178, 100)",
+		"green": "rgb(129, 201, 99)",
+		"cyan": "rgb(105, 199, 188)",
+		"blue": "rgb(137, 189, 234)",
+		"magenta": "rgb(222, 162, 234)",
+		"comment": "rgb(117, 117, 117)"
 	}
 }
 dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.2))

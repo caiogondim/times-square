@@ -5,18 +5,18 @@
   <title>Document</title>
   <style>
     html, body {
-      background-color: rgb(56, 56, 56);
+      background-color: rgb(43, 43, 43);
       font-size: 18px;
     }
 
     #rgb-canvas {
-      width: 600px;
-      height: 600px;
+      width: 1200px;
+      height: 1200px;
     }
 
     #hsluv-canvas {
-      width: 600px;
-      height: 600px;
+      width: 1200px;
+      height: 1200px;
     }
 
     .lorem {
@@ -26,7 +26,7 @@
 </head>
 <body>
   <!-- red, green, yellow, blue, magenta, cyan -->
-  <canvas id="rgb-canvas"></canvas>
+  <!-- <canvas id="rgb-canvas"></canvas> -->
   <canvas id="hsluv-canvas"></canvas>
   <script src="https://rawcdn.githack.com/hsluv/hsluv/891edd6a46d6e5bd8d29749c209c76887e062a6e/javascript/dist/hsluv-0.1.0.min.js"></script>
   <script>
@@ -41,36 +41,36 @@
     // 2. Get equidistant colors from the same height using HSLUV algorithm
 
     const accentColors = []
-    // Try a smaller saturation ~70%
     const heightOfSampling = 1200 * 0.7
 
-    const canvas = document.documentElement.querySelector('#rgb-canvas')
-    canvas.width = 1200
-    canvas.height = 1200
+    // const canvas = document.documentElement.querySelector('#rgb-canvas')
+    // canvas.width = 1200
+    // canvas.height = 1200
 
     const $canvasHsluv = document.documentElement.querySelector('#hsluv-canvas')
     $canvasHsluv.width = 1200
     $canvasHsluv.height = 1200
 
-    const context = canvas.getContext('2d')
+    // const context = canvas.getContext('2d')
     const hsluvContext = $canvasHsluv.getContext('2d')
 
     function mapCoordToLightness(x, y) {
-      const maxWidth = canvas.width
+      const maxWidth = $canvasHsluv.width
       return (y / maxWidth) * 100
     }
 
     function mapCoordToHue(x, y) {
-      const maxWidth = canvas.width
+      const maxWidth = $canvasHsluv.width
       return (x / maxWidth) * 360
     }
 
     let saturation
     let hue
     // let lightness = 66.1
-    let lightness = 81.5
-    for (let x = 0; x < canvas.width; x++) {
-      for (let y = 0; y < canvas.height; y++) {
+    // let lightness = 81
+    let lightness = 74.5
+    for (let x = 0; x < $canvasHsluv.width; x++) {
+      for (let y = 0; y < $canvasHsluv.height; y++) {
 
         // lightness = mapCoordToLightness(x, y)
         saturation = mapCoordToLightness(x, y)
@@ -87,13 +87,13 @@
           hsluvContext.fillRect(x, y, 1, 1)
         }
 
-        context.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`
-        context.fillRect(x, y, 1, 1)
+        // context.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`
+        // context.fillRect(x, y, 1, 1)
       }
     }
 
     // for (let color of [...accentColors, `#666666`, `#a1a1a1`]) {
-    for (let color of [...accentColors, `#666666`, `#c9c9c9`]) {
+    for (let color of [...accentColors, `#757575`, `#b8b8b8`]) {
       const $div = document.createElement('span')
       $div.style = `
         width: 30px;

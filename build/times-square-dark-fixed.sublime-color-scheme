@@ -9,7 +9,7 @@
     "cyan": "rgb(105, 199, 188)",
     "blue": "rgb(137, 189, 234)",
     "magenta": "rgb(222, 162, 234)",
-    "selection": "rgb(52, 52, 52)",
+    "selection": "rgb(65, 65, 65)",
     "comment": "rgb(117, 117, 117)"
   },
   "globals": {

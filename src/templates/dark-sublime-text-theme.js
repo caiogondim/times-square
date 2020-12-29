@@ -68,7 +68,13 @@ const sidebar = [
   {
     class: 'sidebar_container',
     'layer0.tint': dark.rgb.gray4,
-  },
+  }, {
+      class: 'sidebar_heading',
+      case: 'title',
+      fg: dark.rgb.comment,
+      'font.size': 11,
+      'font.bold': true
+  }
 ]
 
 const views = [

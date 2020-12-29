@@ -5,6 +5,13 @@
       "layer0.tint": "rgb(32, 32, 32)"
     },
     {
+      "class": "sidebar_heading",
+      "case": "title",
+      "fg": "rgb(117, 117, 117)",
+      "font.size": 11,
+      "font.bold": true
+    },
+    {
       "class": "title_bar",
       "fg": "rgb(184, 184, 184)",
       "bg": "rgb(32, 32, 32)"

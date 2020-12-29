@@ -1,5 +1,5 @@
 {
-  "name": "Times Square (Dark)",
+  "name": "Times Square (Dark, Fixed)",
   "variables": {
     "background": "rgb(56, 56, 56)",
     "foreground": "rgb(201, 201, 201)",
@@ -59,12 +59,9 @@
       "foreground": "var(red)"
     },
     {
-      "name": "between blue",
+      "name": "blue",
       "scope": "support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function",
-      "foreground": [
-        "var(green)",
-        "var(magenta)"
-      ]
+      "foreground": "var(blue)"
     }
   ]
 }

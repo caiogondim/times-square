@@ -15,7 +15,6 @@ const dark = {
 		"cyan": "rgb(117, 220, 208)",
 		"blue": "rgb(173, 206, 240)",
 		"magenta": "rgb(231, 189, 240)",
-		"selection": "rgb(68, 68, 68)",
 		"comment": "rgb(102, 102, 102)"
 	}
 }

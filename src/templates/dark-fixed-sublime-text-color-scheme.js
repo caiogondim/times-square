@@ -1,7 +1,7 @@
 const { dark } = require('../colors')
 
 const template = {
-    "name": "Times Square (Dark)",
+    "name": "Times Square (Dark, Fixed)",
     "variables": {
         "background": dark.rgb.background,
         "foreground": dark.rgb.foreground,
@@ -52,9 +52,9 @@ const template = {
         "scope": "support.type.object.module, keyword.generator.asterisk, storage.modifier.async, keyword.control, keyword.control, variable.language.super",
         "foreground": "var(red)"
     },{
-        "name": "between blue",
+        "name": "blue",
         "scope": "support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function",
-        "foreground": ["var(green)", "var(magenta)"]
+        "foreground": "var(blue)"
     }]
 }
 

@@ -12,6 +12,17 @@
       "font.bold": true
     },
     {
+      "class": "tree_row",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.tint": "rgb(43, 43, 43)"
+    },
+    {
+      "class": "sidebar_label",
+      "color": "rgb(184, 184, 184)"
+    },
+    {
       "class": "title_bar",
       "fg": "rgb(184, 184, 184)",
       "bg": "rgb(32, 32, 32)"

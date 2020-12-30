@@ -17,8 +17,11 @@ const tabs = [
     'layer0.inner_margin': 0,
     'layer0.opacity': 1,
     'layer1.inner_margin': 0,
+    'layer1.opacity': 0,
     'layer2.inner_margin': 0,
+    'layer2.opacity': 0,
     'layer3.inner_margin': 0,
+    'layer3.opacity': 0,
     mouse_wheel_switch: false,
     tab_overlap: 0,
   },
@@ -145,7 +148,7 @@ const quickPanel = [
     'layer0.texture': '',
     'layer0.opacity': 1,
     'layer0.tint': dark.rgb.gray4,
-    content_margin: [10, 10, 10, 10],
+    "content_margin":5
   },
   {
     class: 'quick_panel',
@@ -153,6 +156,27 @@ const quickPanel = [
     'layer0.opacity': 1,
     'layer0.tint': dark.rgb.gray4,
   },
+]
+
+const panels = [
+  {
+    class: 'panel_control',
+    'layer0.tint': dark.rgb.gray4,
+    'layer0.texture': '',
+    'layer1.texture': '',
+    'layer2.texture': '',
+    'layer3.texture': '',
+    'layer1.opacity': 0,
+    'layer2.opacity': 0,
+    'layer3.opacity': 0,
+    "content_margin": 5
+  }, {
+    class: 'panel_control find_panel',
+    content_margin: 5
+  }, {
+    class: 'panel_grid_control',
+    inside_spacing: 5
+  }
 ]
 
 const template = {
@@ -163,6 +187,7 @@ const template = {
     ...statusBar,
     ...views,
     ...quickPanel,
+    ...panels,
   ],
 }
 

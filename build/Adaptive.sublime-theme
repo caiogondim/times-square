@@ -145,6 +145,27 @@
       "layer0.tint": "rgb(43, 43, 43)"
     },
     {
+      "class": "tab_label",
+      "parents": [
+        {
+          "class": "tab_control"
+        }
+      ],
+      "fg": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "tab_label",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "fg": "rgb(184, 184, 184)"
+    },
+    {
       "class": "status_bar",
       "layer0.tint": "rgb(32, 32, 32)",
       "layer0.texture": "",

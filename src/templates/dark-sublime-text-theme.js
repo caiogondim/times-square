@@ -43,6 +43,16 @@ const tabs = [
     attributes: ['selected'],
     'layer0.tint': dark.rgb.background,
   },
+  {
+    class: 'tab_label',
+    parents: [{ class: 'tab_control' }],
+    fg: dark.rgb.comment,
+  },
+  {
+    class: 'tab_label',
+    parents: [{ class: 'tab_control', attributes: ['selected'] }],
+    fg: dark.rgb.foreground,
+  },
 ]
 
 const statusBar = [
@@ -64,8 +74,6 @@ const statusBar = [
   },
 ]
 
-// asdasdsad
-// asdasdasdsad
 const sidebar = [
   {
     class: 'sidebar_container',

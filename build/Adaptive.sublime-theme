@@ -20,7 +20,77 @@
     },
     {
       "class": "sidebar_label",
+      "color": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
       "color": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "icon_file_type",
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "icon_file_type",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "icon_file_type",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "icon_folder",
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(184, 184, 184)"
     },
     {
       "class": "title_bar",

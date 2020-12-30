@@ -64,6 +64,8 @@ const statusBar = [
   },
 ]
 
+// asdasdsad
+// asdasdasdsad
 const sidebar = [
   {
     class: 'sidebar_container',
@@ -83,7 +85,42 @@ const sidebar = [
   },
   {
     class: 'sidebar_label',
+    color: dark.rgb.comment,
+  },
+  {
+    class: 'sidebar_label',
+    parents: [{ class: 'tree_row', attributes: ['selected'] }],
     color: dark.rgb.foreground,
+  },
+  {
+    class: 'icon_file_type',
+    'layer0.tint': dark.rgb.comment,
+    'layer0.opacity': 1,
+  },
+  {
+    class: 'icon_file_type',
+    parents: [{ class: 'tree_row', attributes: ['hover'] }],
+    'layer0.tint': dark.rgb.comment,
+  },
+  {
+    class: 'icon_file_type',
+    parents: [{ class: 'tree_row', attributes: ['selected'] }],
+    'layer0.tint': dark.rgb.foreground,
+  },
+  {
+    class: 'icon_folder',
+    'layer0.tint': dark.rgb.comment,
+    'layer0.opacity': 1,
+  },
+  {
+    class: 'icon_folder',
+    parents: [{ class: 'tree_row', attributes: ['hover'] }],
+    'layer0.tint': dark.rgb.comment,
+  },
+  {
+    class: 'icon_folder',
+    parents: [{ class: 'tree_row', attributes: ['selected'] }],
+    'layer0.tint': dark.rgb.foreground,
   },
 ]
 

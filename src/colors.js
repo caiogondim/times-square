@@ -28,7 +28,7 @@ const dark = {
     comment: 'rgb(117, 117, 117)',
   },
 }
-dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.5))
+dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.3))
 dark.rgb.black = colorToRgb(Color(dark.rgb.background).darken(0.5))
 dark.rgb.gray1 = colorToRgb(Color(dark.rgb.background).lighten(0.5))
 dark.rgb.gray2 = colorToRgb(Color(dark.rgb.background).lighten(0.25))

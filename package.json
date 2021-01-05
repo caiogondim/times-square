@@ -11,7 +11,8 @@
     "jest": "jest",
     "lint": "eslint --ext '.js' --ext '.json' --report-unused-disable-directives .",
     "build": "node src/scripts/build.js",
-    "install-on-sublime": "cp ./build/times-square-dark-variable.sublime-color-scheme ~/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User && cp ./build/times-square-dark-fixed.sublime-color-scheme ~/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User && cp ./build/times-square-dark.sublime-theme ~/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User"
+    "dev": "node src/scripts/dev.js",
+    "cp-to-sublime-app": "node src/scripts/cp-to-sublime-app.js"
   },
   "devDependencies": {
     "color": "^3.1.3",

@@ -1,0 +1,325 @@
+{
+  "rules": [
+    {
+      "class": "label_control",
+      "color": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "title_label_control",
+      "color": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "button_control",
+      "min_size": [
+        80,
+        25
+      ],
+      "layer0.tint": "rgb(43, 43, 43)",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "label_control",
+      "parents": [
+        {
+          "class": "button_control"
+        }
+      ],
+      "color": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "icon_button_group",
+      "spacing": 5
+    },
+    {
+      "class": "sidebar_container",
+      "layer0.tint": "rgb(32, 32, 32)",
+      "layer0.opacity": 1,
+      "content_margin": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "class": "sidebar_tree",
+      "row_padding": 5,
+      "spacer_rows": true,
+      "indent": 14,
+      "indent_offset": 10,
+      "indent_top_level": true
+    },
+    {
+      "class": "sidebar_heading",
+      "case": "title",
+      "fg": "rgb(117, 117, 117)",
+      "font.size": 11,
+      "font.bold": true
+    },
+    {
+      "class": "tree_row",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.tint": "rgb(43, 43, 43)",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "sidebar_label",
+      "color": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "color": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "icon_file_type",
+      "layer1.tint": "rgb(117, 117, 117)",
+      "layer1.opacity": 1,
+      "layer1.texture": "User/doc.png",
+      "content_margin": [
+        6,
+        7
+      ]
+    },
+    {
+      "class": "icon_file_type",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.tint": "rgb(236, 164, 178)"
+    },
+    {
+      "class": "icon_folder",
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1,
+      "layer0.texture": "User/folder.png",
+      "content_margin": [
+        7,
+        6
+      ]
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "file_system_entry",
+      "spacing": 5
+    },
+    {
+      "class": "vcs_status_badge",
+      "parents": [
+        {
+          "class": "file_system_entry",
+          "attributes": [
+            "modified"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(217, 178, 100)"
+    },
+    {
+      "class": "vcs_status_badge",
+      "parents": [
+        {
+          "class": "file_system_entry",
+          "attributes": [
+            "staged"
+          ]
+        }
+      ],
+      "layer0.tint": "rgb(129, 201, 99)"
+    },
+    {
+      "class": "disclosure_button_control",
+      "content_margin": [
+        8,
+        4
+      ],
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1,
+      "layer0.texture": "User/disclosure-right-2.png"
+    },
+    {
+      "class": "disclosure_button_control",
+      "attributes": [
+        "expanded"
+      ],
+      "content_margin": [
+        6,
+        4
+      ],
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1,
+      "layer0.texture": "User/disclosure-down-3.png"
+    },
+    {
+      "class": "title_bar",
+      "fg": "rgb(184, 184, 184)",
+      "bg": "rgb(32, 32, 32)"
+    },
+    {
+      "class": "tabset_control",
+      "content_margin": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "layer0.texture": "",
+      "layer0.tint": "rgb(32, 32, 32)",
+      "layer0.opacity": 1,
+      "layer1.opacity": 0,
+      "layer2.opacity": 0,
+      "layer3.opacity": 0,
+      "mouse_wheel_switch": false,
+      "tab_overlap": 0
+    },
+    {
+      "class": "tab_control",
+      "layer0.texture": "",
+      "layer0.tint": "rgb(32, 32, 32)",
+      "layer0.inner_margin": [
+        5,
+        5
+      ],
+      "layer0.opacity": 1,
+      "layer1.opacity": 0,
+      "layer2.opacity": 0,
+      "layer3.opacity": 0,
+      "content_margin": 10,
+      "max_margin_trim": 0,
+      "hit_test_level": 0
+    },
+    {
+      "class": "tab_control",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.tint": "rgb(43, 43, 43)"
+    },
+    {
+      "class": "tab_label",
+      "parents": [
+        {
+          "class": "tab_control"
+        }
+      ],
+      "fg": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "tab_label",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "fg": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "status_bar",
+      "layer0.tint": "rgb(32, 32, 32)",
+      "layer0.opacity": 1,
+      "layer1.opacity": 0,
+      "content_margin": 5
+    },
+    {
+      "class": "label_control",
+      "parents": [
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "grid_layout_control",
+      "border_color": "rgb(32, 32, 32)",
+      "border_size": 2
+    },
+    {
+      "class": "fold_button_control",
+      "content_margin": 4,
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1,
+      "layer0.texture": "User/disclosure-right.png"
+    },
+    {
+      "class": "overlay_control",
+      "layer0.texture": "",
+      "layer0.opacity": 1,
+      "layer0.tint": "rgb(32, 32, 32)",
+      "content_margin": 5
+    },
+    {
+      "class": "quick_panel",
+      "layer0.texture": "",
+      "layer0.opacity": 1,
+      "layer0.tint": "rgb(32, 32, 32)"
+    },
+    {
+      "class": "quick_panel_row",
+      "layer0.texture": "",
+      "layer0.tint": "rgb(32, 32, 32)",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "quick_panel_label",
+      "fg": "rgb(117, 117, 117)"
+    },
+    {
+      "class": "panel_control",
+      "layer0.tint": "rgb(32, 32, 32)",
+      "layer0.texture": "",
+      "layer0.opacity": 1,
+      "content_margin": [
+        0,
+        5,
+        -5,
+        5
+      ]
+    },
+    {
+      "class": "panel_grid_control",
+      "inside_spacing": 10,
+      "outside_hspacing": 5,
+      "outside_vspacing": 5
+    },
+    {
+      "class": "dialog",
+      "layer0.tint": "rgb(32, 32, 32)"
+    }
+  ]
+}

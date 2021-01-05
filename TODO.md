@@ -1,3 +1,5 @@
+- Create a folder for the theme + color scheme
+  - Move the whole folder to ST folder 
 - fix obj1.obj2.obj3.obj4
   - highlight obj1 and obj4 only
 - test contrast ratio

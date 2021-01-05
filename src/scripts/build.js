@@ -8,6 +8,8 @@ const iterm = require('../templates/iterm')
 const darkSublimeTextTheme = require('../templates/dark-sublime-text-theme')
 
 async function main() {
+  console.log('Building...')
+
   const inputOutputMap = [
     {
       input: darkVariableSublimeTextColorScheme,
@@ -18,7 +20,7 @@ async function main() {
       output: 'times-square-dark-fixed.sublime-color-scheme',
     },
     { input: iterm, output: 'times-square.itermcolors' },
-    { input: darkSublimeTextTheme, output: 'Adaptive.sublime-theme' },
+    { input: darkSublimeTextTheme, output: 'times-square.sublime-theme' },
   ]
   for (const { input, output } of inputOutputMap) {
     const writeStream = createWriteStream(
@@ -26,6 +28,12 @@ async function main() {
     )
     await pipeline(Readable.from(input), writeStream)
   }
+
+  console.log('Done.')
 }
 
-main()
+if (require.main === module) {
+  main()
+}
+
+module.exports = main

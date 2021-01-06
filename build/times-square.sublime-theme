@@ -81,6 +81,30 @@
       "color": "rgb(184, 184, 184)"
     },
     {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "color": "rgb(184, 184, 184)"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "color": "rgb(184, 184, 184)"
+    },
+    {
       "class": "icon_file_type",
       "layer1.tint": "rgb(117, 117, 117)",
       "layer1.opacity": 1,
@@ -92,16 +116,27 @@
     },
     {
       "class": "icon_file_type",
-      "attributes": [
-        "selected"
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
       ],
-      "layer0.tint": "rgb(236, 164, 178)"
+      "layer1.tint": "rgb(184, 184, 184)",
+      "layer1.opacity": 1,
+      "layer1.texture": "User/doc.png",
+      "content_margin": [
+        6,
+        7
+      ]
     },
     {
       "class": "icon_folder",
       "layer0.tint": "rgb(117, 117, 117)",
       "layer0.opacity": 1,
-      "layer0.texture": "User/folder.png",
+      "layer0.texture": "User/folder-fill.png",
       "content_margin": [
         7,
         6

@@ -104,6 +104,16 @@ const sidebar = [
     color: dark.rgb.foreground,
   },
   {
+    class: 'sidebar_label',
+    parents: [{ class: 'tree_row', attributes: ['selected'] }],
+    color: dark.rgb.foreground,
+  },
+  {
+    class: 'sidebar_label',
+    parents: [{ class: 'tree_row', attributes: ['hover'] }],
+    color: dark.rgb.foreground,
+  },
+  {
     class: 'icon_file_type',
     'layer1.tint': dark.rgb.comment,
     'layer1.opacity': 1,
@@ -112,14 +122,17 @@ const sidebar = [
   },
   {
     class: 'icon_file_type',
-    attributes: ['selected'],
-    'layer0.tint': dark.rgb.red,
+    parents: [{ class: 'tree_row', attributes: ['selected'] }],
+    'layer1.tint': dark.rgb.foreground,
+    'layer1.opacity': 1,
+    'layer1.texture': 'User/doc.png',
+    content_margin: [6, 7],
   },
   {
     class: 'icon_folder',
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    'layer0.texture': 'User/folder.png',
+    'layer0.texture': 'User/folder-fill.png',
     content_margin: [7, 6],
   },
   {

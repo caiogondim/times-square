@@ -6,7 +6,7 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2020,
   },
   plugins: ['prettier', 'json'],
   extends: ['eslint:recommended', 'plugin:prettier/recommended'],

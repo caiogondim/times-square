@@ -9,3 +9,4 @@
 - generate application specific color scheme via a temaplate engine
   - https://docs.rs/tinytemplate/1.1.0/tinytemplate/
 - test against color blindness
+- rename to cityscape

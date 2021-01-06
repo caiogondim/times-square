@@ -8,13 +8,21 @@ function clearRequireCache() {
 }
 
 async function onFileChange() {
-  clearRequireCache()
+  try {
+    clearRequireCache()
 
-  const build = require('./build')
-  const cpToSublimeApp = require('./cp-to-sublime-app')
+    const build = require('./build')
+    const cpToSublimeApp = require('./cp-to-sublime-app')
 
-  await build()
-  await cpToSublimeApp()
+    await build()
+    await cpToSublimeApp()
+  } catch (error) {
+    if (error?.constructor === SyntaxError) {
+      console.error(error)
+    } else {
+      throw error
+    }
+  }
 }
 
 async function main() {

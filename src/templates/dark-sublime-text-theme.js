@@ -113,25 +113,20 @@ const sidebar = [
   },
   {
     class: 'icon_file_type',
-    'layer1.tint': dark.rgb.comment,
-    'layer1.opacity': 1,
-    'layer1.texture': 'User/doc.png',
-    content_margin: [6, 7],
+    'layer0.tint': dark.rgb.comment,
+    'layer0.opacity': 1,
   },
   {
     class: 'icon_file_type',
     parents: [{ class: 'tree_row', attributes: ['selected'] }],
-    'layer1.tint': dark.rgb.foreground,
-    'layer1.opacity': 1,
-    'layer1.texture': 'User/doc.png',
-    content_margin: [6, 7],
+    'layer0.tint': dark.rgb.foreground,
+    'layer0.opacity': 1,
   },
   {
     class: 'icon_folder',
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    // 'layer0.texture': 'User/folder-fill.png',
-    content_margin: [7, 6],
+    // content_margin: [8, 7],
   },
   {
     class: 'icon_folder',
@@ -158,25 +153,6 @@ const sidebar = [
     'layer0.tint': dark.rgb.green,
   },
   {
-    class: 'disclosure_button_control',
-    // content_margin: [8, 4],
-    'layer0.tint': dark.rgb.comment,
-    // 'layer0.texture': '',
-    'layer0.opacity': 1,
-    'layer1.opacity': 0,
-    'layer2.opacity': 0,
-    'layer3.opacity': 0,
-    // 'layer0.texture': 'User/disclosure-right-2.png',
-  },
-  {
-    class: 'disclosure_button_control',
-    attributes: ['expanded'],
-    // content_margin: [6, 4],
-    'layer0.tint': dark.rgb.comment,
-    'layer0.opacity': 1,
-    // 'layer0.texture': 'User/disclosure-down-3.png',
-  },
-  {
     class: 'vcs_status_badge',
     content_margin: 0,
   },
@@ -190,10 +166,8 @@ const views = [
   },
   {
     class: 'fold_button_control',
-    // content_margin: 4,
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    // 'layer0.texture': 'User/disclosure-right.png',
   },
 ]
 
@@ -296,11 +270,6 @@ const buttons = [
     'layer0.inner_margin': 2,
     'layer0.opacity': 1.0,
     'layer0.tint': dark.rgb.background,
-    // 'layer1.draw_center': false,
-    // 'layer1.inner_margin': 6,
-    // 'layer1.opacity': 1.0,
-    // // 'layer1.texture': 'User/input--bw1--br2.png',
-    // 'layer1.tint': dark.rgb.background,
   },
   {
     class: 'label_control',
@@ -310,9 +279,6 @@ const buttons = [
   {
     class: 'icon_button_group',
     spacing: 10,
-  },
-  {
-    class: 'icon_button_group',
   },
 ]
 
@@ -326,14 +292,12 @@ const inputs = [
     'layer1.draw_center': false,
     'layer1.inner_margin': 6,
     'layer1.opacity': 1.0,
-    // 'layer1.texture': 'User/input--bw1--br2.png',
     'layer1.tint': dark.rgb.background,
   },
 ]
 
 const template = {
   extends: 'Adaptive.sublime-theme',
-  // extends: "Default.sublime-theme",
   rules: [
     ...labels,
     ...buttons,

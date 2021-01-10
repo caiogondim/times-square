@@ -1,4 +1,5 @@
 {
+  "extends": "Adaptive.sublime-theme",
   "rules": [
     {
       "class": "label_control",
@@ -14,8 +15,10 @@
         80,
         25
       ],
-      "layer0.tint": "rgb(43, 43, 43)",
-      "layer0.opacity": 1
+      "content_margin": 2,
+      "layer0.inner_margin": 2,
+      "layer0.opacity": 1,
+      "layer0.tint": "rgb(43, 43, 43)"
     },
     {
       "class": "label_control",
@@ -28,7 +31,10 @@
     },
     {
       "class": "icon_button_group",
-      "spacing": 5
+      "spacing": 10
+    },
+    {
+      "class": "icon_button_group"
     },
     {
       "class": "sidebar_container",
@@ -136,7 +142,6 @@
       "class": "icon_folder",
       "layer0.tint": "rgb(117, 117, 117)",
       "layer0.opacity": 1,
-      "layer0.texture": "User/folder-fill.png",
       "content_margin": [
         7,
         6
@@ -196,26 +201,23 @@
     },
     {
       "class": "disclosure_button_control",
-      "content_margin": [
-        8,
-        4
-      ],
       "layer0.tint": "rgb(117, 117, 117)",
       "layer0.opacity": 1,
-      "layer0.texture": "User/disclosure-right-2.png"
+      "layer1.opacity": 0,
+      "layer2.opacity": 0,
+      "layer3.opacity": 0
     },
     {
       "class": "disclosure_button_control",
       "attributes": [
         "expanded"
       ],
-      "content_margin": [
-        6,
-        4
-      ],
       "layer0.tint": "rgb(117, 117, 117)",
-      "layer0.opacity": 1,
-      "layer0.texture": "User/disclosure-down-3.png"
+      "layer0.opacity": 1
+    },
+    {
+      "class": "vcs_status_badge",
+      "content_margin": 0
     },
     {
       "class": "title_bar",
@@ -230,14 +232,9 @@
         0,
         0
       ],
-      "layer0.texture": "",
       "layer0.tint": "rgb(32, 32, 32)",
-      "layer0.opacity": 1,
-      "layer1.opacity": 0,
-      "layer2.opacity": 0,
-      "layer3.opacity": 0,
-      "mouse_wheel_switch": false,
-      "tab_overlap": 0
+      "tab_overlap": 0,
+      "tint_index": 1
     },
     {
       "class": "tab_control",
@@ -252,7 +249,6 @@
       "layer2.opacity": 0,
       "layer3.opacity": 0,
       "content_margin": 10,
-      "max_margin_trim": 0,
       "hit_test_level": 0
     },
     {
@@ -300,16 +296,18 @@
       "color": "rgb(117, 117, 117)"
     },
     {
+      "class": "sidebar_button_control",
+      "layer0.tint": "rgb(117, 117, 117)"
+    },
+    {
       "class": "grid_layout_control",
       "border_color": "rgb(32, 32, 32)",
       "border_size": 2
     },
     {
       "class": "fold_button_control",
-      "content_margin": 4,
       "layer0.tint": "rgb(117, 117, 117)",
-      "layer0.opacity": 1,
-      "layer0.texture": "User/disclosure-right.png"
+      "layer0.opacity": 1
     },
     {
       "class": "overlay_control",
@@ -320,19 +318,10 @@
     },
     {
       "class": "quick_panel",
+      "row_padding": 10,
       "layer0.texture": "",
       "layer0.opacity": 1,
       "layer0.tint": "rgb(32, 32, 32)"
-    },
-    {
-      "class": "quick_panel_row",
-      "layer0.texture": "",
-      "layer0.tint": "rgb(32, 32, 32)",
-      "layer0.opacity": 1
-    },
-    {
-      "class": "quick_panel_label",
-      "fg": "rgb(117, 117, 117)"
     },
     {
       "class": "panel_control",
@@ -340,10 +329,10 @@
       "layer0.texture": "",
       "layer0.opacity": 1,
       "content_margin": [
-        0,
         5,
-        -5,
-        5
+        5,
+        5,
+        0
       ]
     },
     {
@@ -353,8 +342,25 @@
       "outside_vspacing": 5
     },
     {
+      "class": "panel_close_button",
+      "content_margin": 0,
+      "layer0.opacity": 0,
+      "layer0.texture": ""
+    },
+    {
       "class": "dialog",
       "layer0.tint": "rgb(32, 32, 32)"
+    },
+    {
+      "class": "text_line_control",
+      "content_margin": 5,
+      "layer0.inner_margin": 2,
+      "layer0.opacity": 1,
+      "layer0.tint": "rgb(43, 43, 43)",
+      "layer1.draw_center": false,
+      "layer1.inner_margin": 6,
+      "layer1.opacity": 1,
+      "layer1.tint": "rgb(43, 43, 43)"
     }
   ]
 }

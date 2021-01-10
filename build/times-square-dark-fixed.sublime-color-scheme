@@ -21,7 +21,7 @@
     "gutter_foreground": "var(comment)",
     "fold_marker": "var(magenta)",
     "misspelling": "var(red)",
-    "accent": "var(magenta)",
+    "accent": "var(foreground)",
     "brackets_options": "underline",
     "invisibles": "var(comment)"
   },

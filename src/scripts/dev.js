@@ -16,6 +16,7 @@ async function onFileChange() {
 
     await build()
     await cpToSublimeApp()
+    console.log('')
   } catch (error) {
     if (error?.constructor === SyntaxError) {
       console.error(error)

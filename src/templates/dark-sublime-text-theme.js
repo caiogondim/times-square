@@ -12,14 +12,9 @@ const tabs = [
   {
     class: 'tabset_control',
     content_margin: [0, 0, 0, 0],
-    'layer0.texture': '',
     'layer0.tint': dark.rgb.gray4,
-    'layer0.opacity': 1,
-    'layer1.opacity': 0,
-    'layer2.opacity': 0,
-    'layer3.opacity': 0,
-    mouse_wheel_switch: false,
     tab_overlap: 0,
+    tint_index: 1, // This is needed to remove Adaptive theme default background color
   },
   {
     class: 'tab_control',
@@ -31,7 +26,6 @@ const tabs = [
     'layer2.opacity': 0,
     'layer3.opacity': 0,
     content_margin: 10,
-    max_margin_trim: 0,
     hit_test_level: 0,
   },
   {
@@ -63,6 +57,10 @@ const statusBar = [
     class: 'label_control',
     parents: [{ class: 'status_bar' }],
     color: dark.rgb.comment,
+  },
+  {
+    class: 'sidebar_button_control',
+    'layer0.tint': dark.rgb.comment,
   },
 ]
 
@@ -132,7 +130,7 @@ const sidebar = [
     class: 'icon_folder',
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    'layer0.texture': 'User/folder-fill.png',
+    // 'layer0.texture': 'User/folder-fill.png',
     content_margin: [7, 6],
   },
   {
@@ -161,18 +159,26 @@ const sidebar = [
   },
   {
     class: 'disclosure_button_control',
-    content_margin: [8, 4],
+    // content_margin: [8, 4],
     'layer0.tint': dark.rgb.comment,
+    // 'layer0.texture': '',
     'layer0.opacity': 1,
-    'layer0.texture': 'User/disclosure-right-2.png',
+    'layer1.opacity': 0,
+    'layer2.opacity': 0,
+    'layer3.opacity': 0,
+    // 'layer0.texture': 'User/disclosure-right-2.png',
   },
   {
     class: 'disclosure_button_control',
     attributes: ['expanded'],
-    content_margin: [6, 4],
+    // content_margin: [6, 4],
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    'layer0.texture': 'User/disclosure-down-3.png',
+    // 'layer0.texture': 'User/disclosure-down-3.png',
+  },
+  {
+    class: 'vcs_status_badge',
+    content_margin: 0,
   },
 ]
 
@@ -184,10 +190,10 @@ const views = [
   },
   {
     class: 'fold_button_control',
-    content_margin: 4,
+    // content_margin: 4,
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    'layer0.texture': 'User/disclosure-right.png',
+    // 'layer0.texture': 'User/disclosure-right.png',
   },
 ]
 
@@ -201,20 +207,45 @@ const quickPanel = [
   },
   {
     class: 'quick_panel',
+    row_padding: 10,
     'layer0.texture': '',
     'layer0.opacity': 1,
     'layer0.tint': dark.rgb.gray4,
   },
-  {
-    class: 'quick_panel_row',
-    'layer0.texture': '',
-    'layer0.tint': dark.rgb.gray4,
-    'layer0.opacity': 1,
-  },
-  {
-    class: 'quick_panel_label',
-    fg: dark.rgb.comment,
-  },
+  // {
+  //   class: 'quick_panel_row',
+  //   'layer0.texture': '',
+  //   'layer0.tint': dark.rgb.gray4,
+  //   'layer0.opacity': 1,
+  // },
+  // {
+  //   class: 'quick_panel_row',
+  //   attributes: ['selected'],
+  //   'layer0.texture': '',
+  //   'layer0.tint': dark.rgb.background,
+  //   'layer0.opacity': 1,
+  // },
+  // {
+  //   class: 'quick_panel_label',
+  //   fg: dark.rgb.comment,
+  // },
+  // {
+  //   class: 'quick_panel_label',
+  //   parents: [{ class: 'quick_panel_row', attributes: ['selected'] }],
+  //   fg: 'white',
+  //   match_fg: 'white',
+  //   selected_fg: 'white',
+  //   selected_match_fg: 'white',
+  // },
+  // {
+  //   class: 'quick_panel_path_label',
+  //   parents: [{ class: 'quick_panel_row' }],
+  //   match_fg: dark.rgb.comment,
+  //     selected_fg: dark.rgb.comment,
+  //     selected_match_fg: dark.rgb.comment,
+  //     "font.size": 11,
+  //     "font.italic": false
+  // }
 ]
 
 const panels = [
@@ -223,13 +254,19 @@ const panels = [
     'layer0.tint': dark.rgb.gray4,
     'layer0.texture': '',
     'layer0.opacity': 1,
-    content_margin: [0, 5, -5, 5],
+    content_margin: [5, 5, 5, 0],
   },
   {
     class: 'panel_grid_control',
     inside_spacing: 10,
     outside_hspacing: 5,
     outside_vspacing: 5,
+  },
+  {
+    class: 'panel_close_button',
+    content_margin: 0,
+    'layer0.opacity': 0,
+    'layer0.texture': '',
   },
 ]
 
@@ -255,8 +292,15 @@ const buttons = [
   {
     class: 'button_control',
     min_size: [80, 25],
+    content_margin: 2,
+    'layer0.inner_margin': 2,
+    'layer0.opacity': 1.0,
     'layer0.tint': dark.rgb.background,
-    'layer0.opacity': 1,
+    // 'layer1.draw_center': false,
+    // 'layer1.inner_margin': 6,
+    // 'layer1.opacity': 1.0,
+    // // 'layer1.texture': 'User/input--bw1--br2.png',
+    // 'layer1.tint': dark.rgb.background,
   },
   {
     class: 'label_control',
@@ -265,11 +309,30 @@ const buttons = [
   },
   {
     class: 'icon_button_group',
-    spacing: 5,
+    spacing: 10,
+  },
+  {
+    class: 'icon_button_group',
+  },
+]
+
+const inputs = [
+  {
+    class: 'text_line_control',
+    content_margin: 5,
+    'layer0.inner_margin': 2,
+    'layer0.opacity': 1.0,
+    'layer0.tint': dark.rgb.background,
+    'layer1.draw_center': false,
+    'layer1.inner_margin': 6,
+    'layer1.opacity': 1.0,
+    // 'layer1.texture': 'User/input--bw1--br2.png',
+    'layer1.tint': dark.rgb.background,
   },
 ]
 
 const template = {
+  extends: 'Adaptive.sublime-theme',
   // extends: "Default.sublime-theme",
   rules: [
     ...labels,
@@ -282,6 +345,7 @@ const template = {
     ...quickPanel,
     ...panels,
     ...dialogs,
+    ...inputs,
   ],
 }
 

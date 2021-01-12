@@ -14,7 +14,7 @@
     "build": "node src/scripts/build.js",
     "dev": "node src/scripts/dev.js",
     "install-on-sublime": "node src/scripts/install-on-sublime.js",
-    "install-on-iterm": "open build/times-square.itermcolors"
+    "install-on-iterm": "open build/Times\\ Square.itermcolors"
   },
   "devDependencies": {
     "color": "^3.1.3",

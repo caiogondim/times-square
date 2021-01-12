@@ -28,8 +28,9 @@ async function onFileChange() {
 
 async function main() {
   console.log(
-    'Watching files under src/ and copying build artifacts to Sublime Text app.'
+    'Watching files under src/ and copying build artifacts to Sublime Text app...'
   )
+  console.log('')
   const srcPath = path.resolve(__dirname, '..', '..', 'src')
   watch(srcPath, { recursive: true }, onFileChange)
 }

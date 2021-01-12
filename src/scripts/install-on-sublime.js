@@ -25,6 +25,13 @@ async function main() {
         'Times Square.sublime-color-scheme'
       ),
     },
+    // {
+    //   src: path.resolve(buildFolder, 'Times Square (fixed).sublime-color-scheme'),
+    //   target: path.resolve(
+    //     sublimePkgsUserFolder,
+    //     'Times Square (fixed).sublime-color-scheme'
+    //   ),
+    // },
   ]
 
   for (const { src, target } of sourceTargetMap) {

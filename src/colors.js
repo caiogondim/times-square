@@ -28,7 +28,8 @@ const dark = {
     comment: 'rgb(117, 117, 117)',
   },
 }
-dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.3))
+dark.rgb.lineHighlight = colorToRgb(Color(dark.rgb.background).lighten(0.25))
+dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.75))
 dark.rgb.black = colorToRgb(Color(dark.rgb.background).darken(0.5))
 dark.rgb.gray1 = colorToRgb(Color(dark.rgb.background).lighten(0.5))
 dark.rgb.gray2 = colorToRgb(Color(dark.rgb.background).lighten(0.25))
@@ -47,6 +48,7 @@ dark.hex = {
   magenta: Color(dark.rgb.magenta).hex(),
   selection: Color(dark.rgb.selection).hex(),
   comment: Color(dark.rgb.comment).hex(),
+  lineHighlight: Color(dark.rgb.lineHighlight).hex(),
 }
 
 dark.srgb = {
@@ -62,6 +64,7 @@ dark.srgb = {
   white: colorToSrgb(Color(dark.rgb.white)),
   black: colorToSrgb(Color(dark.rgb.black)),
   comment: colorToSrgb(Color(dark.rgb.comment)),
+  lineHighlight: colorToSrgb(Color(dark.rgb.lineHighlight)),
 }
 
 module.exports = { dark }

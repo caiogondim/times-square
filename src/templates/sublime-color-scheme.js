@@ -1,7 +1,7 @@
 const { dark } = require('../colors')
 
 const template = {
-  name: 'Times Square (Dark, Variable)',
+  name: 'Times Square',
   variables: {
     background: dark.rgb.background,
     foreground: dark.rgb.foreground,
@@ -20,13 +20,13 @@ const template = {
     caret: 'var(foreground)',
     block_caret: 'var(foreground)',
     selection: 'var(selection)',
-    line_highlight: 'var(selection)',
     gutter_foreground: 'var(comment)',
     fold_marker: 'var(foreground)',
     misspelling: 'var(red)',
     accent: 'var(foreground)',
     brackets_options: 'underline',
     invisibles: 'var(comment)',
+    line_highlight: dark.rgb.lineHighlight,
   },
   rules: [
     {
@@ -68,7 +68,6 @@ const template = {
       foreground: 'var(red)',
     },
     {
-      name: 'between blue',
       scope:
         'support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css',
       foreground: ['var(green)', 'var(magenta)'],

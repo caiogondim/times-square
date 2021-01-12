@@ -1,12 +1,4 @@
-- Create a folder for the theme + color scheme
-  - Move the whole folder to ST folder 
+- fixed sublime color scheme should extend from default
 - fix obj1.obj2.obj3.obj4
   - highlight obj1 and obj4 only
-- test contrast ratio
-  - https://docs.rs/contrast/0.1.0/contrast/fn.contrast.html
-  - all colors must have same contrast ratio
-  - all colors must have at least constrat ratio of 4
-- generate application specific color scheme via a temaplate engine
-  - https://docs.rs/tinytemplate/1.1.0/tinytemplate/
-- test against color blindness
 - rename to cityscape

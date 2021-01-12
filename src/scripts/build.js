@@ -3,7 +3,7 @@ const { Readable } = require('stream')
 const { pipeline } = require('stream/promises')
 const { createWriteStream } = require('fs')
 const sublimeColorScheme = require('../templates/sublime-color-scheme')
-const sublimeColorSchemeFixed = require('../templates/sublime-color-scheme-fixed')
+// const sublimeColorSchemeFixed = require('../templates/sublime-color-scheme-fixed')
 const iterm = require('../templates/iterm')
 const sublimeTheme = require('../templates/sublime-theme')
 
@@ -15,10 +15,10 @@ async function main() {
       input: sublimeColorScheme,
       output: 'Times Square.sublime-color-scheme',
     },
-    {
-      input: sublimeColorSchemeFixed,
-      output: 'Times Square (fixed).sublime-color-scheme',
-    },
+    // {
+    //   input: sublimeColorSchemeFixed,
+    //   output: 'Times Square (fixed).sublime-color-scheme',
+    // },
     { input: sublimeTheme, output: 'Times Square.sublime-theme' },
     { input: iterm, output: 'Times Square.itermcolors' },
   ]

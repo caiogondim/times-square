@@ -1,5 +1,5 @@
 {
-  "name": "Times Square (Dark, Variable)",
+  "name": "Times Square",
   "variables": {
     "background": "rgb(43, 43, 43)",
     "foreground": "rgb(184, 184, 184)",
@@ -9,7 +9,7 @@
     "cyan": "rgb(105, 199, 188)",
     "blue": "rgb(137, 189, 234)",
     "magenta": "rgb(222, 162, 234)",
-    "selection": "rgb(56, 56, 56)",
+    "selection": "rgb(75, 75, 75)",
     "comment": "rgb(117, 117, 117)"
   },
   "globals": {
@@ -18,13 +18,13 @@
     "caret": "var(foreground)",
     "block_caret": "var(foreground)",
     "selection": "var(selection)",
-    "line_highlight": "var(selection)",
     "gutter_foreground": "var(comment)",
     "fold_marker": "var(foreground)",
     "misspelling": "var(red)",
     "accent": "var(foreground)",
     "brackets_options": "underline",
-    "invisibles": "var(comment)"
+    "invisibles": "var(comment)",
+    "line_highlight": "rgb(54, 54, 54)"
   },
   "rules": [
     {
@@ -60,7 +60,6 @@
       "foreground": "var(red)"
     },
     {
-      "name": "between blue",
       "scope": "support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css",
       "foreground": [
         "var(green)",

@@ -128,7 +128,6 @@ const sidebar = [
     class: 'icon_folder',
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
-    // content_margin: [8, 7],
   },
   {
     class: 'icon_folder',
@@ -188,40 +187,6 @@ const quickPanel = [
     'layer0.opacity': 1,
     'layer0.tint': dark.rgb.gray4,
   },
-  // {
-  //   class: 'quick_panel_row',
-  //   'layer0.texture': '',
-  //   'layer0.tint': dark.rgb.gray4,
-  //   'layer0.opacity': 1,
-  // },
-  // {
-  //   class: 'quick_panel_row',
-  //   attributes: ['selected'],
-  //   'layer0.texture': '',
-  //   'layer0.tint': dark.rgb.background,
-  //   'layer0.opacity': 1,
-  // },
-  // {
-  //   class: 'quick_panel_label',
-  //   fg: dark.rgb.comment,
-  // },
-  // {
-  //   class: 'quick_panel_label',
-  //   parents: [{ class: 'quick_panel_row', attributes: ['selected'] }],
-  //   fg: 'white',
-  //   match_fg: 'white',
-  //   selected_fg: 'white',
-  //   selected_match_fg: 'white',
-  // },
-  // {
-  //   class: 'quick_panel_path_label',
-  //   parents: [{ class: 'quick_panel_row' }],
-  //   match_fg: dark.rgb.comment,
-  //     selected_fg: dark.rgb.comment,
-  //     selected_match_fg: dark.rgb.comment,
-  //     "font.size": 11,
-  //     "font.italic": false
-  // }
 ]
 
 const panels = [

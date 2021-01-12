@@ -12,10 +12,10 @@ async function onFileChange() {
     clearRequireCache()
 
     const build = require('./build')
-    const cpToSublimeApp = require('./cp-to-sublime-app')
+    const installOnSublime = require('./install-on-sublime')
 
     await build()
-    await cpToSublimeApp()
+    await installOnSublime()
     console.log('')
   } catch (error) {
     if (error?.constructor === SyntaxError) {

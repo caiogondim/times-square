@@ -2,25 +2,25 @@ const path = require('path')
 const { Readable } = require('stream')
 const { pipeline } = require('stream/promises')
 const { createWriteStream } = require('fs')
-const darkVariableSublimeTextColorScheme = require('../templates/dark-variable-sublime-text-color-scheme')
-const darkFixedSublimeTextColorScheme = require('../templates/dark-fixed-sublime-text-color-scheme')
+const sublimeColorScheme = require('../templates/sublime-color-scheme')
+const sublimeColorSchemeFixed = require('../templates/sublime-color-scheme-fixed')
 const iterm = require('../templates/iterm')
-const darkSublimeTextTheme = require('../templates/dark-sublime-text-theme')
+const sublimeTheme = require('../templates/sublime-theme')
 
 async function main() {
   console.log('Building...')
 
   const inputOutputMap = [
     {
-      input: darkVariableSublimeTextColorScheme,
-      output: 'times-square-dark-variable.sublime-color-scheme',
+      input: sublimeColorScheme,
+      output: 'Times Square.sublime-color-scheme',
     },
     {
-      input: darkFixedSublimeTextColorScheme,
-      output: 'times-square-dark-fixed.sublime-color-scheme',
+      input: sublimeColorSchemeFixed,
+      output: 'Times Square (fixed).sublime-color-scheme',
     },
-    { input: iterm, output: 'times-square.itermcolors' },
-    { input: darkSublimeTextTheme, output: 'times-square.sublime-theme' },
+    { input: sublimeTheme, output: 'Times Square.sublime-theme' },
+    { input: iterm, output: 'Times Square.itermcolors' },
   ]
   for (const { input, output } of inputOutputMap) {
     const writeStream = createWriteStream(
@@ -29,7 +29,7 @@ async function main() {
     await pipeline(Readable.from(input), writeStream)
   }
 
-  console.log('Done.')
+  console.log('Done')
 }
 
 if (require.main === module) {

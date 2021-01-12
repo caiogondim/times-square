@@ -61,6 +61,8 @@ const statusBar = [
   {
     class: 'sidebar_button_control',
     'layer0.tint': dark.rgb.comment,
+    'layer0.opacity': 1,
+    content_margin: 0,
   },
 ]
 

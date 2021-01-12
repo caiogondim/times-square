@@ -15,17 +15,14 @@ async function main() {
   )
   const sourceTargetMap = [
     {
-      src: path.resolve(buildFolder, 'times-square.sublime-theme'),
-      target: path.resolve(sublimePkgsUserFolder, 'times-square.sublime-theme'),
+      src: path.resolve(buildFolder, 'Times Square.sublime-theme'),
+      target: path.resolve(sublimePkgsUserFolder, 'Times Square.sublime-theme'),
     },
     {
-      src: path.resolve(
-        buildFolder,
-        'times-square-dark-variable.sublime-color-scheme'
-      ),
+      src: path.resolve(buildFolder, 'Times Square.sublime-color-scheme'),
       target: path.resolve(
         sublimePkgsUserFolder,
-        'times-square-dark-variable.sublime-color-scheme'
+        'Times Square.sublime-color-scheme'
       ),
     },
   ]
@@ -33,7 +30,7 @@ async function main() {
   for (const { src, target } of sourceTargetMap) {
     await fs.copyFile(src, target)
   }
-  console.log('Done.')
+  console.log('Done')
 }
 
 if (require.main === module) {

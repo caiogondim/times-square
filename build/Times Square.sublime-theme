@@ -264,7 +264,9 @@
     },
     {
       "class": "sidebar_button_control",
-      "layer0.tint": "rgb(117, 117, 117)"
+      "layer0.tint": "rgb(117, 117, 117)",
+      "layer0.opacity": 1,
+      "content_margin": 0
     },
     {
       "class": "grid_layout_control",

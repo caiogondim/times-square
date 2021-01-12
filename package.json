@@ -10,9 +10,11 @@
     "test": "jest && yarn lint",
     "jest": "jest",
     "lint": "eslint --ext '.js' --ext '.json' --report-unused-disable-directives .",
+    "fmt": "yarn lint --fix",
     "build": "node src/scripts/build.js",
     "dev": "node src/scripts/dev.js",
-    "cp-to-sublime-app": "node src/scripts/cp-to-sublime-app.js"
+    "install-on-sublime": "node src/scripts/install-on-sublime.js",
+    "install-on-iterm": "open build/times-square.itermcolors"
   },
   "devDependencies": {
     "color": "^3.1.3",

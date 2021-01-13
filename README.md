@@ -3,7 +3,7 @@
 - Uses whole spectrum of colors
 - Semantic highlighting
 - Between all foreground colors and background:
-  - Same perceptual constranst using [HSLuv](https://www.hsluv.org) algorithm
+  - Same perceptual contrast using [HSLuv](https://www.hsluv.org) algorithm
   - AA 7.0 constrast for better readability and accessibility
   - No more than 7.0 contrast for reduced eye strain
 

@@ -1,7 +1,5 @@
 # 🏙️ Times Square
 
-## Features
-
 - Uses whole spectrum of colors
 - Semantic highlighting
 - Between all foreground colors and background:
@@ -42,3 +40,14 @@ yarn install-on-iterm
 cp ./build/Times\ Square.sublime-color-scheme path/to/your/sublime-text/packages/folder
 cp ./build/Times\ Square.sublime-theme path/to/your/sublime-text/packages/folder
 ```
+
+## Sponsor
+
+If you found this project useful consider transfering some
+bitcoins to `1BqqKiZA8Tq43CdukdBEwCdDD42jxuX9UY`.
+
+---
+
+[caiogondim.com](https://caiogondim.com) &nbsp;&middot;&nbsp;
+GitHub [@caiogondim](https://github.com/caiogondim) &nbsp;&middot;&nbsp;
+Twitter [@caio_gondim](https://twitter.com/caio_gondim)

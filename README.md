@@ -1,4 +1,4 @@
-# 🏙️ Times Square
+# Times Square 🏙️
 
 - Uses whole spectrum of colors
 - Semantic highlighting

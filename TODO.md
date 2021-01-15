@@ -1,4 +1,0 @@
-- fixed sublime color scheme should extend from default
-- fix obj1.obj2.obj3.obj4
-  - highlight obj1 and obj4 only
-- rename to cityscape

@@ -297,6 +297,7 @@
       "layer0.tint": "rgb(32, 32, 32)",
       "layer0.texture": "",
       "layer0.opacity": 1,
+      "layer1.opacity": 0,
       "content_margin": [
         5,
         5,

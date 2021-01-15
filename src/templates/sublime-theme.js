@@ -195,6 +195,7 @@ const panels = [
     'layer0.tint': dark.rgb.gray4,
     'layer0.texture': '',
     'layer0.opacity': 1,
+    'layer1.opacity': 0,
     content_margin: [5, 5, 5, 0],
   },
   {

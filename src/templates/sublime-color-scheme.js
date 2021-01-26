@@ -40,7 +40,7 @@ const template = {
     },
     {
       scope:
-        'support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete',
+        'support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete, punctuation.accessor.rust',
       foreground: 'var(foreground)',
     },
     {
@@ -64,12 +64,12 @@ const template = {
     },
     {
       scope:
-        'support.type.object.module, keyword.generator.asterisk, storage.modifier.async, keyword.control, keyword.control, variable.language.super',
+        'support.type.object.module, keyword.generator.asterisk, storage.modifier.async, keyword.control, keyword.control, variable.language.super, keyword.other.rust, keyword.declaration.async',
       foreground: 'var(red)',
     },
     {
       scope:
-        'support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css',
+        'support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css, support.type.rust, support.macro.rust, meta.path.rust, entity.name.class',
       foreground: ['var(green)', 'var(magenta)'],
     },
   ],

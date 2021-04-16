@@ -13,7 +13,7 @@
     "fmt": "yarn lint --fix",
     "build": "node src/scripts/build.js",
     "dev": "node src/scripts/dev.js",
-    "install-on-sublime": "yarn build && node src/scripts/install-on-sublime.js",
+    "install-on-sublime-text": "yarn build && node src/scripts/install-on-sublime-text.js",
     "install-on-sublime-merge": "yarn build && node src/scripts/install-on-sublime-merge.js",
     "install-on-iterm": "yarn build && open build/Times\\ Square.itermcolors"
   },

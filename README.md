@@ -20,6 +20,13 @@
 
 ![sublime](./media/sublime-screenshot.png)
 
+### Sublime Merge
+
+- Times Square color scheme
+- Times Square theme
+
+![sublime](./media/sublime-merge-screenshot.png)
+
 ### iTerm
 
 - Times Square color scheme
@@ -27,11 +34,14 @@
 
 ![iterm](./media/iterm-screenshot.png)
 
-## Instalation
+## Installation
 
 ```bash
 # For Sublime Text on macOS
-yarn install-on-sublime
+yarn install-on-sublime-text
+
+# For Sublime Merge on macOS
+yarn install-on-sublime-merge
 
 # For iTerm on macOS
 yarn install-on-iterm

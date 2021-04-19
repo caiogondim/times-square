@@ -253,7 +253,7 @@ const buttons = [
 const inputs = [
   {
     class: 'text_line_control',
-    content_margin: 5,
+    content_margin: 2,
     'layer0.inner_margin': 2,
     'layer0.opacity': 1.0,
     'layer0.tint': dark.rgb.background,

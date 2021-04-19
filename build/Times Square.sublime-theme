@@ -323,7 +323,7 @@
     },
     {
       "class": "text_line_control",
-      "content_margin": 5,
+      "content_margin": 2,
       "layer0.inner_margin": 2,
       "layer0.opacity": 1,
       "layer0.tint": "rgb(43, 43, 43)",

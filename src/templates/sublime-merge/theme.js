@@ -5,8 +5,6 @@
 
 const { dark } = require('../../colors')
 
-console.log('dark', dark)
-
 const template = {
   extends: 'Merge Dark.sublime-theme',
   variables: {

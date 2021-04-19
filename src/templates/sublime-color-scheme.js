@@ -69,7 +69,7 @@ const template = {
     },
     {
       scope:
-        'support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css, support.type.rust, support.macro.rust, meta.path.rust, entity.name.class',
+        'support.class.js, support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css, support.type.rust, support.macro.rust, meta.path.rust, entity.name.class',
       foreground: ['var(green)', 'var(magenta)'],
     },
   ],

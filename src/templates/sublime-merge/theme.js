@@ -2,6 +2,8 @@
 // https://github.com/Resike/Merge-Monokai-Theme/blob/main/Monokai.sublime-theme
 // https://github.com/meetio-theme/merge-meetio-theme/blob/master/Dark/Merge%20Dark.sublime-theme
 // https://github.com/facelessuser/merge-dracula-theme
+// Merge Dark.sublime-theme source code: https://pastebin.com/keNt6AbS
+// Merge.sublime-theme source code: https://pastebin.com/NCQjJaMb
 
 const { dark } = require('../../colors')
 
@@ -44,7 +46,7 @@ const template = {
 
     // Preferences Page
     preferences_overlay_bg: 'var(gray4)',
-    preferences_section_table_bg: 'var(background)',
+    preferences_section_table_bg: 'var(gray5)',
 
     //
     table_of_contents_fg: 'var(foreground)',
@@ -151,6 +153,22 @@ const template = {
       color3: 'var(green)',
       color4: 'var(yellow)',
     },
+    {
+      "class": "diff_text_control",
+      "line_selection_color": `color(var(selection) alpha(0.25))`,
+      "line_selection_border_width": 0,
+      "line_selection_border_radius": 0,
+    },
+
+    //
+    // Preferences
+    //
+
+    // Title for each preference listed on the right overlay
+    // {
+    //   class: "preference_title_label",
+    //   color: "var(red)"
+    // }
   ],
 }
 

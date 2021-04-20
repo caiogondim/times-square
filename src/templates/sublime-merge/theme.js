@@ -154,10 +154,10 @@ const template = {
       color4: 'var(yellow)',
     },
     {
-      "class": "diff_text_control",
-      "line_selection_color": `color(var(selection) alpha(0.25))`,
-      "line_selection_border_width": 0,
-      "line_selection_border_radius": 0,
+      class: 'diff_text_control',
+      line_selection_color: `color(var(selection) alpha(0.25))`,
+      line_selection_border_width: 0,
+      line_selection_border_radius: 0,
     },
 
     //

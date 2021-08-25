@@ -196,7 +196,7 @@ const panels = [
     'layer0.texture': '',
     'layer0.opacity': 1,
     'layer1.opacity': 0,
-    content_margin: [5, 5, 5, 0],
+    content_margin: [5, 0, 5, 0],
   },
   {
     class: 'panel_grid_control',
@@ -209,6 +209,10 @@ const panels = [
     content_margin: 0,
     'layer0.opacity': 0,
     'layer0.texture': '',
+  },
+  {
+    class: 'text_output_control',
+    color_scheme_tint: dark.rgb.gray4,
   },
 ]
 
@@ -254,13 +258,7 @@ const inputs = [
   {
     class: 'text_line_control',
     content_margin: 2,
-    'layer0.inner_margin': 2,
-    'layer0.opacity': 1.0,
-    'layer0.tint': dark.rgb.background,
-    'layer1.draw_center': false,
-    'layer1.inner_margin': 6,
-    'layer1.opacity': 1.0,
-    'layer1.tint': dark.rgb.background,
+    color_scheme_tint: dark.rgb.gray4,
   },
 ]
 

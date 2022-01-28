@@ -9,7 +9,7 @@ async function main() {
     process.env.HOME,
     'Library',
     'Application Support',
-    'Sublime Text 3',
+    'Sublime Text',
     'Packages',
     'User'
   )

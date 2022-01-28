@@ -170,6 +170,11 @@ const views = [
     'layer0.tint': dark.rgb.comment,
     'layer0.opacity': 1,
   },
+  // Background color with opacity should be the same as `dark.rgb.lineHighlight`
+  {
+    class: 'minimap_control',
+    viewport_opacity: 0.6,
+  },
 ]
 
 const quickPanel = [

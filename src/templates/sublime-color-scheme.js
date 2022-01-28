@@ -40,7 +40,7 @@ const template = {
     },
     {
       scope:
-        'support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete, punctuation.accessor.rust',
+        'support.class, support.class.component, storage.type, storage.type.class, storage.type.function, support.constant, support.variable.dom, keyword, variable.language, keyword.operator.expression.typeof, storage.modifier, storage.type.property, keyword.operator.new, keyword.operator.expression.delete, punctuation.accessor.rust, source.jsx meta.jsx.js',
       foreground: 'var(foreground)',
     },
     {
@@ -49,7 +49,7 @@ const template = {
     },
     {
       scope:
-        'punctuation.section.interpolation.begin.js, punctuation.section.interpolation.end.js, punctuation.section.brackets.begin, punctuation.section.brackets.end, punctuation.section.block.begin, punctuation.section.block.end, punctuation.section.group.js, punctuation.section.group.begin, punctuation.section.group.end, entity, source, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma',
+        'punctuation.section.interpolation.begin.js, punctuation.section.interpolation.end.js, punctuation.section.brackets.begin, punctuation.section.brackets.end, punctuation.section.block.begin, punctuation.section.block.end, punctuation.section.group.js, punctuation.section.group.begin, punctuation.section.group.end, entity, source, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.dollar, support.variable, keyword.operator, punctuation.separator.key-value, punctuation.separator.comma, punctuation.definition.js, entity.name.function.constructor',
       foreground: 'var(foreground)',
     },
     {
@@ -64,12 +64,12 @@ const template = {
     },
     {
       scope:
-        'support.type.object.module, keyword.generator.asterisk, storage.modifier.async, keyword.control, keyword.control, variable.language.super, keyword.other.rust, keyword.declaration.async',
+        'support.type.object.module, keyword.generator.asterisk, storage.modifier.async, keyword.control, keyword.control, variable.language.super, keyword.other.rust, keyword.declaration.async, keyword.declaration.generator.js',
       foreground: 'var(red)',
     },
     {
       scope:
-        'support.class.js, support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css, support.type.rust, support.macro.rust, meta.path.rust, entity.name.class, meta.property.object.js',
+        'support.class.js, support.class.error, entity.other.inherited-class, markup.raw.inline.markdown, support.variable.property, meta.object-literal.key, variable.other.object.property, variable.other.property, support.function.dom, support.function, variable, entity.name.type, support.variable.property.dom, meta.function-call, entity.name.function, entity.name.tag, meta.selector.css, support.type.rust, support.macro.rust, meta.path.rust, entity.name.class, meta.property.object.js, entity.other.attribute-name.js',
       foreground: ['var(green)', 'var(magenta)'],
     },
   ],

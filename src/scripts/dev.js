@@ -12,7 +12,7 @@ async function onFileChange() {
     clearRequireCache()
 
     const build = require('./build')
-    const installOnSublime = require('./install-on-sublime')
+    const installOnSublime = require('./install-on-sublime-text')
 
     await build()
     await installOnSublime()

@@ -16,18 +16,18 @@ function colorToSrgb(color) {
 
 const dark = {
   rgb: {
-    background: 'rgb(43, 43, 43)',
-    foreground: 'rgb(184, 184, 184)',
-    red: 'rgb(236, 164, 178)',
-    yellow: 'rgb(217, 178, 100)',
-    green: 'rgb(129, 201, 99)',
-    cyan: 'rgb(105, 199, 188)',
-    blue: 'rgb(137, 189, 234)',
-    magenta: 'rgb(222, 162, 234)',
-    white: 'rgb(254, 254, 254)',
-    comment: 'rgb(117, 117, 117)',
+    background: 'rgb(50, 50, 50)',
+    foreground: 'rgb(194, 194, 194)',
+    red: 'rgb(239, 177, 188)',
+    yellow: 'rgb(229, 187, 105)',
+    green: 'rgb(136, 212, 105)',
+    cyan: 'rgb(111, 209, 198)',
+    blue: 'rgb(156, 197, 237)',
+    magenta: 'rgb(226, 176, 237)',
+    white: 'rgb(254, 254, 254)'
   },
 }
+dark.rgb.comment = colorToRgb(Color(dark.rgb.foreground).darken(0.4))
 dark.rgb.lineHighlight = colorToRgb(Color(dark.rgb.background).lighten(0.25))
 dark.rgb.selection = colorToRgb(Color(dark.rgb.background).lighten(0.75))
 dark.rgb.black = colorToRgb(Color(dark.rgb.background).darken(0.5))

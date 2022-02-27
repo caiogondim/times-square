@@ -5,7 +5,7 @@
   <title>Document</title>
   <style>
     html, body {
-      background-color: rgb(43, 43, 43);
+      background-color: rgb(50, 50, 50);
       font-size: 18px;
     }
 
@@ -66,9 +66,7 @@
 
     let saturation
     let hue
-    // let lightness = 66.1
-    // let lightness = 81
-    let lightness = 74.5
+    let lightness = 78
     for (let x = 0; x < $canvasHsluv.width; x++) {
       for (let y = 0; y < $canvasHsluv.height; y++) {
 
@@ -92,8 +90,7 @@
       }
     }
 
-    // for (let color of [...accentColors, `#666666`, `#a1a1a1`]) {
-    for (let color of [...accentColors, `#757575`, `#b8b8b8`]) {
+    for (let color of [...accentColors, `#c2c2c2`]) {
       const $div = document.createElement('span')
       $div.style = `
         width: 30px;

@@ -74,7 +74,6 @@ async function main() {
   for (const { src, target } of sourceTargetMap) {
     await fs.copyFile(src, target)
   }
-  console.log('Done')
 }
 
 if (require.main === module) {

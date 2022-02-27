@@ -9,7 +9,7 @@ async function main() {
     process.env.HOME,
     'Library',
     'Application Support',
-    'Sublime Text 3',
+    'Sublime Text',
     'Packages',
     'User'
   )
@@ -25,19 +25,11 @@ async function main() {
         'Times Square.sublime-color-scheme'
       ),
     },
-    // {
-    //   src: path.resolve(buildFolder, 'Times Square (fixed).sublime-color-scheme'),
-    //   target: path.resolve(
-    //     sublimePkgsUserFolder,
-    //     'Times Square (fixed).sublime-color-scheme'
-    //   ),
-    // },
   ]
 
   for (const { src, target } of sourceTargetMap) {
     await fs.copyFile(src, target)
   }
-  console.log('Done')
 }
 
 if (require.main === module) {

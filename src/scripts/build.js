@@ -25,10 +25,6 @@ async function main() {
       input: sublimeColorScheme,
       output: 'Times Square.sublime-color-scheme',
     },
-    // {
-    //   input: sublimeColorSchemeFixed,
-    //   output: 'Times Square (fixed).sublime-color-scheme',
-    // },
     { input: sublimeTheme, output: 'Times Square.sublime-theme' },
     { input: iterm, output: 'Times Square.itermcolors' },
     { input: JSON.stringify(colors, null, 2), output: 'colors.json' },
@@ -56,7 +52,6 @@ async function main() {
     await pipeline(Readable.from(input), writeStream)
   }
 
-  console.log('Done')
 }
 
 if (require.main === module) {
